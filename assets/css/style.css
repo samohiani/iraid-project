@@ -12752,7 +12752,7 @@ span.select2-selection.select2-selection--single:focus {
   position: absolute;
   width: 320px;
   height: 14px;
-  background: var(--theme-color2);
+  background: rgba(0, 0, 0, 0.01);
   top: 82px;
   right: 150px;
   z-index: 1;
