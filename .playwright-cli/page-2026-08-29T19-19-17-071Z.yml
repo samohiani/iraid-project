@@ -1,0 +1,281 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "IRAID home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "IRAID" [ref=e6]
+      - navigation "Primary navigation" [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "About Us" [ref=e9] [cursor=pointer]:
+          - /url: /about
+        - link "Gallery" [ref=e10] [cursor=pointer]:
+          - /url: /gallery
+        - link "Blog" [ref=e11] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact Us" [ref=e12] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e13]:
+        - link "Donate Now" [ref=e14] [cursor=pointer]:
+          - /url: /contact
+          - text: ♥ Donate Now
+        - link "Donate" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+        - button "Open menu" [ref=e16]
+  - complementary [ref=e17]:
+    - generic [ref=e18]:
+      - button [ref=e19]: × Close menu
+      - paragraph [ref=e21]: Explore IRAID
+      - navigation [ref=e22]:
+        - link [ref=e23] [cursor=pointer]:
+          - /url: /
+          - text: Home
+        - link [ref=e24] [cursor=pointer]:
+          - /url: /about
+          - text: About Us
+        - link [ref=e25] [cursor=pointer]:
+          - /url: /gallery
+          - text: Gallery
+        - link [ref=e26] [cursor=pointer]:
+          - /url: /blog
+          - text: Blog
+        - link [ref=e27] [cursor=pointer]:
+          - /url: /contact
+          - text: Contact Us
+      - generic [ref=e28]:
+        - link [ref=e29] [cursor=pointer]:
+          - /url: /contact
+          - text: ♥ Donate Now
+        - link [ref=e30] [cursor=pointer]:
+          - /url: /contact
+          - text: Contact IRAID →
+  - main [ref=e31]:
+    - generic [ref=e33]:
+      - paragraph [ref=e34]: Gallery
+      - heading "People, places and progress" [level=1] [ref=e35]
+      - paragraph [ref=e36]: A closer look at the people, places and practical work behind IRAID’s community-led programmes.
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - paragraph [ref=e40]: See the work
+          - heading "Small moments. Lasting change." [level=2] [ref=e41]
+        - paragraph [ref=e42]: From community conversations and skills training to better access to water, health and livelihoods, these moments show what progress looks like on the ground.
+      - generic [ref=e43]:
+        - group "Gallery filters" [ref=e44]:
+          - button "All" [pressed] [ref=e45]
+          - button "Community" [ref=e46]
+          - button "Empowerment" [ref=e47]
+          - button "Agriculture" [ref=e48]
+          - button "Skills" [ref=e49]
+          - button "Education" [ref=e50]
+          - button "Health" [ref=e51]
+          - button "Water" [ref=e52]
+          - button "Roads" [ref=e53]
+          - button "Signposts" [ref=e54]
+        - paragraph [ref=e55]:
+          - strong [ref=e56]: "27"
+          - text: stories
+      - generic [ref=e57]:
+        - button "View Listening with community leaders" [ref=e58]:
+          - img "Listening with community leaders" [ref=e59]
+          - generic [ref=e60]:
+            - text: Community
+            - strong [ref=e61]: Listening with community leaders
+        - button "View Making space for vulnerable voices" [ref=e62]:
+          - img "Making space for vulnerable voices" [ref=e63]
+          - generic [ref=e64]:
+            - text: Community
+            - strong [ref=e65]: Making space for vulnerable voices
+        - button "View A small business taking root" [ref=e66]:
+          - img "A small business taking root" [ref=e67]
+          - generic [ref=e68]:
+            - text: Empowerment
+            - strong [ref=e69]: A small business taking root
+        - button "View A local shop built for independence" [ref=e70]:
+          - img "A local shop built for independence" [ref=e71]
+          - generic [ref=e72]:
+            - text: Empowerment
+            - strong [ref=e73]: A local shop built for independence
+        - button "View Women turning cassava into opportunity" [ref=e74]:
+          - img "Women turning cassava into opportunity" [ref=e75]
+          - generic [ref=e76]:
+            - text: Empowerment
+            - strong [ref=e77]: Women turning cassava into opportunity
+        - button "View Saving and planning together" [ref=e78]:
+          - img "Saving and planning together" [ref=e79]
+          - generic [ref=e80]:
+            - text: Empowerment
+            - strong [ref=e81]: Saving and planning together
+        - button "View Cocoa farming knowledge in practice" [ref=e82]:
+          - img "Cocoa farming knowledge in practice" [ref=e83]
+          - generic [ref=e84]:
+            - text: Agriculture
+            - strong [ref=e85]: Cocoa farming knowledge in practice
+        - button "View Supporting local poultry producers" [ref=e86]:
+          - img "Supporting local poultry producers" [ref=e87]
+          - generic [ref=e88]:
+            - text: Agriculture
+            - strong [ref=e89]: Supporting local poultry producers
+        - button "View Growing stronger poultry enterprises" [ref=e90]:
+          - img "Growing stronger poultry enterprises" [ref=e91]
+          - generic [ref=e92]:
+            - text: Agriculture
+            - strong [ref=e93]: Growing stronger poultry enterprises
+        - button "View Young people building livelihoods" [ref=e94]:
+          - img "Young people building livelihoods" [ref=e95]
+          - generic [ref=e96]:
+            - text: Agriculture
+            - strong [ref=e97]: Young people building livelihoods
+        - button "View Learning the business of piggery" [ref=e98]:
+          - img "Learning the business of piggery" [ref=e99]
+          - generic [ref=e100]:
+            - text: Agriculture
+            - strong [ref=e101]: Learning the business of piggery
+        - button "View Skills that open new doors" [ref=e102]:
+          - img "Skills that open new doors" [ref=e103]
+          - generic [ref=e104]:
+            - text: Skills
+            - strong [ref=e105]: Skills that open new doors
+        - button "View Learning bakery skills for income" [ref=e106]:
+          - img "Learning bakery skills for income" [ref=e107]
+          - generic [ref=e108]:
+            - text: Skills
+            - strong [ref=e109]: Learning bakery skills for income
+        - button "View Enterprise education at Uzuakoli" [ref=e110]:
+          - img "Enterprise education at Uzuakoli" [ref=e111]
+          - generic [ref=e112]:
+            - text: Education
+            - strong [ref=e113]: Enterprise education at Uzuakoli
+        - button "View An empowerment class in action" [ref=e114]:
+          - img "An empowerment class in action" [ref=e115]
+          - generic [ref=e116]:
+            - text: Education
+            - strong [ref=e117]: An empowerment class in action
+        - button "View Handing over a rural health centre" [ref=e118]:
+          - img "Handing over a rural health centre" [ref=e119]
+          - generic [ref=e120]:
+            - text: Health
+            - strong [ref=e121]: Handing over a rural health centre
+        - button "View Equipping the Mbom community clinic" [ref=e122]:
+          - img "Equipping the Mbom community clinic" [ref=e123]
+          - generic [ref=e124]:
+            - text: Health
+            - strong [ref=e125]: Equipping the Mbom community clinic
+        - button "View Celebrating a healthier community" [ref=e126]:
+          - img "Celebrating a healthier community" [ref=e127]
+          - generic [ref=e128]:
+            - text: Health
+            - strong [ref=e129]: Celebrating a healthier community
+        - button "View Investing in rural livelihoods" [ref=e130]:
+          - img "Investing in rural livelihoods" [ref=e131]
+          - generic [ref=e132]:
+            - text: Agriculture
+            - strong [ref=e133]: Investing in rural livelihoods
+        - button "View Women leading local enterprise" [ref=e134]:
+          - img "Women leading local enterprise" [ref=e135]
+          - generic [ref=e136]:
+            - text: Agriculture
+            - strong [ref=e137]: Women leading local enterprise
+        - button "View A safer route to clean water" [ref=e138]:
+          - img "A safer route to clean water" [ref=e139]
+          - generic [ref=e140]:
+            - text: Water
+            - strong [ref=e141]: A safer route to clean water
+        - button "View Community infrastructure that lasts" [ref=e142]:
+          - img "Community infrastructure that lasts" [ref=e143]
+          - generic [ref=e144]:
+            - text: Water
+            - strong [ref=e145]: Community infrastructure that lasts
+        - button "View Local leadership in action" [ref=e146]:
+          - img "Local leadership in action" [ref=e147]
+          - generic [ref=e148]:
+            - text: Community
+            - strong [ref=e149]: Local leadership in action
+        - button "View Stronger communities, together" [ref=e150]:
+          - img "Stronger communities, together" [ref=e151]
+          - generic [ref=e152]:
+            - text: Community
+            - strong [ref=e153]: Stronger communities, together
+        - button "View Connecting communities to opportunity" [ref=e154]:
+          - img "Connecting communities to opportunity" [ref=e155]
+          - generic [ref=e156]:
+            - text: Roads
+            - strong [ref=e157]: Connecting communities to opportunity
+        - button "View Better access for everyday life" [ref=e158]:
+          - img "Better access for everyday life" [ref=e159]
+          - generic [ref=e160]:
+            - text: Roads
+            - strong [ref=e161]: Better access for everyday life
+        - button "View Making progress visible" [ref=e162]:
+          - img "Making progress visible" [ref=e163]
+          - generic [ref=e164]:
+            - text: Signposts
+            - strong [ref=e165]: Making progress visible
+  - contentinfo [ref=e166]:
+    - generic [ref=e167]:
+      - region [ref=e168]:
+        - link "IRAID home" [ref=e169] [cursor=pointer]:
+          - /url: /
+          - img "IRAID" [ref=e170]
+        - heading "Integrated Rural Aid Foundation" [level=2] [ref=e171]
+        - generic [ref=e172]:
+          - generic [ref=e173]:
+            - text: Locate address
+            - link "36 Bende Road, Umuahia, Abia State" [ref=e174] [cursor=pointer]:
+              - /url: https://www.google.com/maps/search/?api=1&query=36+Bende+Road%2C+Umuahia%2C+Abia+State
+          - generic [ref=e175]:
+            - text: Call us any time
+            - link "+234 912 562 5007" [ref=e176] [cursor=pointer]:
+              - /url: tel:+2349125625007
+            - link "+234 806-590-2793" [ref=e177] [cursor=pointer]:
+              - /url: tel:+2348065902793
+            - link "+234 806-594-0004" [ref=e178] [cursor=pointer]:
+              - /url: tel:+2348065940004
+          - generic [ref=e179]:
+            - text: Email us any time
+            - link "officiallyiraid@gmail.com" [ref=e180] [cursor=pointer]:
+              - /url: mailto:officiallyiraid@gmail.com
+      - navigation "Footer quick links" [ref=e181]:
+        - heading "Quick Links" [level=2] [ref=e182]
+        - link "About Us" [ref=e183] [cursor=pointer]:
+          - /url: /about
+        - link "Our News" [ref=e184] [cursor=pointer]:
+          - /url: /blog
+        - link "Our Track Record" [ref=e185] [cursor=pointer]:
+          - /url: /gallery
+        - link "Our Programmes" [ref=e186] [cursor=pointer]:
+          - /url: /programmes
+        - link "Contact Us" [ref=e187] [cursor=pointer]:
+          - /url: /contact
+      - navigation "IRAID programmes" [ref=e188]:
+        - heading "Our Programmes" [level=2] [ref=e189]
+        - link "Community Development" [ref=e190] [cursor=pointer]:
+          - /url: /programmes
+        - link "Education Support" [ref=e191] [cursor=pointer]:
+          - /url: /programmes
+        - link "Agriculture & Livelihoods" [ref=e192] [cursor=pointer]:
+          - /url: /programmes
+        - link "Family Health" [ref=e193] [cursor=pointer]:
+          - /url: /programmes
+        - link "Our Campaigns" [ref=e194] [cursor=pointer]:
+          - /url: /gallery
+      - region [ref=e195]:
+        - heading "Newsletter" [level=2] [ref=e196]
+        - paragraph [ref=e197]: Get updates on our impact and ways to support stronger rural communities.
+        - generic [ref=e198]:
+          - text: Email address
+          - textbox "Email address" [ref=e199]:
+            - /placeholder: Enter your email
+          - button "Subscribe to newsletter" [ref=e200]: ↗
+        - generic "Social media" [ref=e201]:
+          - link "Find IRAID on Facebook" [ref=e202] [cursor=pointer]:
+            - /url: https://www.facebook.com/search/top?q=Integrated%20Rural%20Aid%20Foundation
+            - text: f Facebook
+          - link "Find IRAID on Instagram" [ref=e203] [cursor=pointer]:
+            - /url: https://www.instagram.com/explore/search/keyword/?q=iraid
+            - text: ◎ Instagram
+    - paragraph [ref=e205]:
+      - text: Copyright © 2026
+      - link "IRAID" [ref=e206] [cursor=pointer]:
+        - /url: /
+      - text: . All Rights Reserved.

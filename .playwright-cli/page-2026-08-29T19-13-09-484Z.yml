@@ -1,0 +1,253 @@
+- generic [ref=f2e2]:
+  - banner [ref=f2e3]:
+    - generic [ref=f2e4]:
+      - link "IRAID home" [ref=f2e5] [cursor=pointer]:
+        - /url: /
+        - img "IRAID" [ref=f2e6]
+      - navigation "Primary navigation" [ref=f2e7]:
+        - link "Home" [ref=f2e8] [cursor=pointer]:
+          - /url: /
+        - link "About Us" [ref=f2e9] [cursor=pointer]:
+          - /url: /about
+        - link "Gallery" [ref=f2e10] [cursor=pointer]:
+          - /url: /gallery
+        - link "Blog" [ref=f2e11] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact Us" [ref=f2e12] [cursor=pointer]:
+          - /url: /contact
+      - link "Donate Now" [ref=f2e14] [cursor=pointer]:
+        - /url: /contact
+        - generic [ref=f2e15]: ♥
+        - text: Donate Now
+  - main [ref=f2e16]:
+    - generic [ref=f2e18]:
+      - paragraph [ref=f2e19]: Gallery
+      - heading "People, places and progress" [level=1] [ref=f2e20]
+      - paragraph [ref=f2e21]: A closer look at the people, places and practical work behind IRAID’s community-led programmes.
+    - generic [ref=f2e22]:
+      - generic [ref=f2e23]:
+        - generic [ref=f2e24]:
+          - paragraph [ref=f2e25]: See the work
+          - heading "Small moments. Lasting change." [level=2] [ref=f2e26]
+        - paragraph [ref=f2e27]: From community conversations and skills training to better access to water, health and livelihoods, these moments show what progress looks like on the ground.
+      - generic [ref=f2e28]:
+        - generic "Gallery filters" [ref=f2e29]:
+          - button "All" [pressed] [ref=f2e30] [cursor=pointer]
+          - button "Community" [ref=f2e31] [cursor=pointer]
+          - button "Empowerment" [ref=f2e32] [cursor=pointer]
+          - button "Agriculture" [ref=f2e33] [cursor=pointer]
+          - button "Skills" [ref=f2e34] [cursor=pointer]
+          - button "Education" [ref=f2e35] [cursor=pointer]
+          - button "Health" [ref=f2e36] [cursor=pointer]
+          - button "Water" [ref=f2e37] [cursor=pointer]
+          - button "Roads" [ref=f2e38] [cursor=pointer]
+          - button "Signposts" [ref=f2e39] [cursor=pointer]
+        - paragraph [ref=f2e40]:
+          - strong [ref=f2e41]: "27"
+          - text: stories
+      - generic [ref=f2e42]:
+        - button "View Listening with community leaders" [ref=f2e43] [cursor=pointer]:
+          - img "Listening with community leaders" [ref=f2e44]
+          - generic [ref=f2e45]:
+            - generic [ref=f2e46]: Community
+            - strong [ref=f2e47]: Listening with community leaders
+        - button "View Making space for vulnerable voices" [ref=f2e48] [cursor=pointer]:
+          - img "Making space for vulnerable voices" [ref=f2e49]
+          - generic [ref=f2e50]:
+            - generic [ref=f2e51]: Community
+            - strong [ref=f2e52]: Making space for vulnerable voices
+        - button "View A small business taking root" [ref=f2e53] [cursor=pointer]:
+          - img "A small business taking root" [ref=f2e54]
+          - generic [ref=f2e55]:
+            - generic [ref=f2e56]: Empowerment
+            - strong [ref=f2e57]: A small business taking root
+        - button "View A local shop built for independence" [ref=f2e58] [cursor=pointer]:
+          - img "A local shop built for independence" [ref=f2e59]
+          - generic [ref=f2e60]:
+            - generic [ref=f2e61]: Empowerment
+            - strong [ref=f2e62]: A local shop built for independence
+        - button "View Women turning cassava into opportunity" [ref=f2e63] [cursor=pointer]:
+          - img "Women turning cassava into opportunity" [ref=f2e64]
+          - generic [ref=f2e65]:
+            - generic [ref=f2e66]: Empowerment
+            - strong [ref=f2e67]: Women turning cassava into opportunity
+        - button "View Saving and planning together" [ref=f2e68] [cursor=pointer]:
+          - img "Saving and planning together" [ref=f2e69]
+          - generic [ref=f2e70]:
+            - generic [ref=f2e71]: Empowerment
+            - strong [ref=f2e72]: Saving and planning together
+        - button "View Cocoa farming knowledge in practice" [ref=f2e73] [cursor=pointer]:
+          - img "Cocoa farming knowledge in practice" [ref=f2e74]
+          - generic [ref=f2e75]:
+            - generic [ref=f2e76]: Agriculture
+            - strong [ref=f2e77]: Cocoa farming knowledge in practice
+        - button "View Supporting local poultry producers" [ref=f2e78] [cursor=pointer]:
+          - img "Supporting local poultry producers" [ref=f2e79]
+          - generic [ref=f2e80]:
+            - generic [ref=f2e81]: Agriculture
+            - strong [ref=f2e82]: Supporting local poultry producers
+        - button "View Growing stronger poultry enterprises" [ref=f2e83] [cursor=pointer]:
+          - img "Growing stronger poultry enterprises" [ref=f2e84]
+          - generic [ref=f2e85]:
+            - generic [ref=f2e86]: Agriculture
+            - strong [ref=f2e87]: Growing stronger poultry enterprises
+        - button "View Young people building livelihoods" [ref=f2e88] [cursor=pointer]:
+          - img "Young people building livelihoods" [ref=f2e89]
+          - generic [ref=f2e90]:
+            - generic [ref=f2e91]: Agriculture
+            - strong [ref=f2e92]: Young people building livelihoods
+        - button "View Learning the business of piggery" [ref=f2e93] [cursor=pointer]:
+          - img "Learning the business of piggery" [ref=f2e94]
+          - generic [ref=f2e95]:
+            - generic [ref=f2e96]: Agriculture
+            - strong [ref=f2e97]: Learning the business of piggery
+        - button "View Skills that open new doors" [ref=f2e98] [cursor=pointer]:
+          - img "Skills that open new doors" [ref=f2e99]
+          - generic [ref=f2e100]:
+            - generic [ref=f2e101]: Skills
+            - strong [ref=f2e102]: Skills that open new doors
+        - button "View Learning bakery skills for income" [ref=f2e103] [cursor=pointer]:
+          - img "Learning bakery skills for income" [ref=f2e104]
+          - generic [ref=f2e105]:
+            - generic [ref=f2e106]: Skills
+            - strong [ref=f2e107]: Learning bakery skills for income
+        - button "View Enterprise education at Uzuakoli" [ref=f2e108] [cursor=pointer]:
+          - img "Enterprise education at Uzuakoli" [ref=f2e109]
+          - generic [ref=f2e110]:
+            - generic [ref=f2e111]: Education
+            - strong [ref=f2e112]: Enterprise education at Uzuakoli
+        - button "View An empowerment class in action" [ref=f2e113] [cursor=pointer]:
+          - img "An empowerment class in action" [ref=f2e114]
+          - generic [ref=f2e115]:
+            - generic [ref=f2e116]: Education
+            - strong [ref=f2e117]: An empowerment class in action
+        - button "View Handing over a rural health centre" [ref=f2e118] [cursor=pointer]:
+          - img "Handing over a rural health centre" [ref=f2e119]
+          - generic [ref=f2e120]:
+            - generic [ref=f2e121]: Health
+            - strong [ref=f2e122]: Handing over a rural health centre
+        - button "View Equipping the Mbom community clinic" [ref=f2e123] [cursor=pointer]:
+          - img "Equipping the Mbom community clinic" [ref=f2e124]
+          - generic [ref=f2e125]:
+            - generic [ref=f2e126]: Health
+            - strong [ref=f2e127]: Equipping the Mbom community clinic
+        - button "View Celebrating a healthier community" [ref=f2e128] [cursor=pointer]:
+          - img "Celebrating a healthier community" [ref=f2e129]
+          - generic [ref=f2e130]:
+            - generic [ref=f2e131]: Health
+            - strong [ref=f2e132]: Celebrating a healthier community
+        - button "View Investing in rural livelihoods" [ref=f2e133] [cursor=pointer]:
+          - img "Investing in rural livelihoods" [ref=f2e134]
+          - generic [ref=f2e135]:
+            - generic [ref=f2e136]: Agriculture
+            - strong [ref=f2e137]: Investing in rural livelihoods
+        - button "View Women leading local enterprise" [ref=f2e138] [cursor=pointer]:
+          - img "Women leading local enterprise" [ref=f2e139]
+          - generic [ref=f2e140]:
+            - generic [ref=f2e141]: Agriculture
+            - strong [ref=f2e142]: Women leading local enterprise
+        - button "View A safer route to clean water" [ref=f2e143] [cursor=pointer]:
+          - img "A safer route to clean water" [ref=f2e144]
+          - generic [ref=f2e145]:
+            - generic [ref=f2e146]: Water
+            - strong [ref=f2e147]: A safer route to clean water
+        - button "View Community infrastructure that lasts" [ref=f2e148] [cursor=pointer]:
+          - img "Community infrastructure that lasts" [ref=f2e149]
+          - generic [ref=f2e150]:
+            - generic [ref=f2e151]: Water
+            - strong [ref=f2e152]: Community infrastructure that lasts
+        - button "View Local leadership in action" [ref=f2e153] [cursor=pointer]:
+          - img "Local leadership in action" [ref=f2e154]
+          - generic [ref=f2e155]:
+            - generic [ref=f2e156]: Community
+            - strong [ref=f2e157]: Local leadership in action
+        - button "View Stronger communities, together" [ref=f2e158] [cursor=pointer]:
+          - img "Stronger communities, together" [ref=f2e159]
+          - generic [ref=f2e160]:
+            - generic [ref=f2e161]: Community
+            - strong [ref=f2e162]: Stronger communities, together
+        - button "View Connecting communities to opportunity" [ref=f2e163] [cursor=pointer]:
+          - img "Connecting communities to opportunity" [ref=f2e164]
+          - generic [ref=f2e165]:
+            - generic [ref=f2e166]: Roads
+            - strong [ref=f2e167]: Connecting communities to opportunity
+        - button "View Better access for everyday life" [ref=f2e168] [cursor=pointer]:
+          - img "Better access for everyday life" [ref=f2e169]
+          - generic [ref=f2e170]:
+            - generic [ref=f2e171]: Roads
+            - strong [ref=f2e172]: Better access for everyday life
+        - button "View Making progress visible" [ref=f2e173] [cursor=pointer]:
+          - img "Making progress visible" [ref=f2e174]
+          - generic [ref=f2e175]:
+            - generic [ref=f2e176]: Signposts
+            - strong [ref=f2e177]: Making progress visible
+  - contentinfo [ref=f2e178]:
+    - generic [ref=f2e179]:
+      - region [ref=f2e180]:
+        - link "IRAID home" [ref=f2e181] [cursor=pointer]:
+          - /url: /
+          - img "IRAID" [ref=f2e182]
+        - heading "Integrated Rural Aid Foundation" [level=2] [ref=f2e183]
+        - generic [ref=f2e184]:
+          - generic [ref=f2e185]:
+            - generic [ref=f2e186]: Locate address
+            - link "36 Bende Road, Umuahia, Abia State" [ref=f2e187] [cursor=pointer]:
+              - /url: https://www.google.com/maps/search/?api=1&query=36+Bende+Road%2C+Umuahia%2C+Abia+State
+          - generic [ref=f2e188]:
+            - generic [ref=f2e189]: Call us any time
+            - link "+234 912 562 5007" [ref=f2e190] [cursor=pointer]:
+              - /url: tel:+2349125625007
+            - link "+234 806-590-2793" [ref=f2e191] [cursor=pointer]:
+              - /url: tel:+2348065902793
+            - link "+234 806-594-0004" [ref=f2e192] [cursor=pointer]:
+              - /url: tel:+2348065940004
+          - generic [ref=f2e193]:
+            - generic [ref=f2e194]: Email us any time
+            - link "officiallyiraid@gmail.com" [ref=f2e195] [cursor=pointer]:
+              - /url: mailto:officiallyiraid@gmail.com
+      - navigation "Footer quick links" [ref=f2e196]:
+        - heading "Quick Links" [level=2] [ref=f2e197]
+        - link "↗About Us" [ref=f2e198] [cursor=pointer]:
+          - /url: /about
+        - link "↗Our News" [ref=f2e199] [cursor=pointer]:
+          - /url: /blog
+        - link "↗Our Track Record" [ref=f2e200] [cursor=pointer]:
+          - /url: /gallery
+        - link "↗Our Programmes" [ref=f2e201] [cursor=pointer]:
+          - /url: /programmes
+        - link "↗Contact Us" [ref=f2e202] [cursor=pointer]:
+          - /url: /contact
+      - navigation "IRAID programmes" [ref=f2e203]:
+        - heading "Our Programmes" [level=2] [ref=f2e204]
+        - link "↗Community Development" [ref=f2e205] [cursor=pointer]:
+          - /url: /programmes
+        - link "↗Education Support" [ref=f2e206] [cursor=pointer]:
+          - /url: /programmes
+        - link "↗Agriculture & Livelihoods" [ref=f2e207] [cursor=pointer]:
+          - /url: /programmes
+        - link "↗Family Health" [ref=f2e208] [cursor=pointer]:
+          - /url: /programmes
+        - link "↗Our Campaigns" [ref=f2e209] [cursor=pointer]:
+          - /url: /gallery
+      - region [ref=f2e210]:
+        - heading "Newsletter" [level=2] [ref=f2e211]
+        - paragraph [ref=f2e212]: Get updates on our impact and ways to support stronger rural communities.
+        - generic [ref=f2e213]:
+          - generic [ref=f2e214]: Email address
+          - textbox "Email address" [ref=f2e215]:
+            - /placeholder: Enter your email
+          - button "Subscribe to newsletter" [ref=f2e216] [cursor=pointer]: ↗
+        - generic "Social media" [ref=f2e217]:
+          - link "Find IRAID on Facebook" [ref=f2e218] [cursor=pointer]:
+            - /url: https://www.facebook.com/search/top?q=Integrated%20Rural%20Aid%20Foundation
+            - generic [ref=f2e219]: f
+            - text: Facebook
+          - link "Find IRAID on Instagram" [ref=f2e220] [cursor=pointer]:
+            - /url: https://www.instagram.com/explore/search/keyword/?q=iraid
+            - generic [ref=f2e221]: ◎
+            - text: Instagram
+    - paragraph [ref=f2e223]:
+      - text: Copyright © 2026
+      - link "IRAID" [ref=f2e224] [cursor=pointer]:
+        - /url: /
+      - text: . All Rights Reserved.
