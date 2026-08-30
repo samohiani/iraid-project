@@ -1,20 +1,23 @@
 import Image from "next/image";
-import type { Trustee } from "@/data/site-content";
+import type { Trustee } from "@/data/trustees";
 
 export function TrusteeCard({
   trustee,
   grid = false,
+  priority = false,
 }: {
   trustee: Trustee;
   grid?: boolean;
+  priority?: boolean;
 }) {
   return (
-    <article className={`trustee-card${grid ? " reveal" : ""}`}>
+    <article className="trustee-card">
       <div className={`trustee-photo ${trustee.portraitClass}`}>
         <Image
           src={trustee.image}
           alt={trustee.name}
           fill
+          priority={priority}
           sizes={
             grid
               ? "(max-width: 700px) 90vw, (max-width: 1100px) 45vw, 30vw"
@@ -28,7 +31,6 @@ export function TrusteeCard({
             <h3>{trustee.name}</h3>
             <p>{trustee.role}</p>
           </div>
-          <span>↗</span>
         </div>
       ) : (
         <div className="trustee-copy">

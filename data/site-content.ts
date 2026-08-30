@@ -1,50 +1,4 @@
-export type Trustee = {
-  name: string;
-  role: string;
-  image: string;
-  portraitClass: string;
-};
-
-export const navItems = [
-  ["/", "Home"],
-  ["/about", "About Us"],
-  ["/gallery", "Gallery"],
-  ["/blog", "Blog"],
-  ["/contact", "Contact Us"],
-] as const;
-
-export const trustees: Trustee[] = [
-  {
-    name: "Prof. Ugwueje Ebere A",
-    role: "Executive President",
-    image: "/assets/img/team/team_2_3-cleaned.jpg",
-    portraitClass: "trustee-photo--ebere",
-  },
-  {
-    name: "Mrs. Lillian. N. Ochulor",
-    role: "Director Finance and Administration IRAID",
-    image: "/assets/img/team/02-cleaned.jpg",
-    portraitClass: "trustee-photo--lillian",
-  },
-  {
-    name: "Prof. GOC Onuekwusi",
-    role: "Community Development Expert, the Vice President, IRAID",
-    image: "/assets/img/team/03-cleaned.jpg",
-    portraitClass: "trustee-photo--goc",
-  },
-  {
-    name: "Mrs. Rebecca. U. Ugwueje Director",
-    role: "Community Mobilization",
-    image: "/assets/img/team/04-cleaned.jpg",
-    portraitClass: "trustee-photo--rebecca",
-  },
-  {
-    name: "Samuel Ebere Ugwueje ESQ.",
-    role: "Secretary and Legal Advisor",
-    image: "/assets/img/team/05-cleaned.jpg",
-    portraitClass: "trustee-photo--samuel",
-  },
-];
+import { organization } from "@/data/organization";
 
 export const programmes = [
   {
@@ -141,27 +95,8 @@ export const faqItems = [
   },
   {
     question: "How can I support IRAID's work?",
-    answer:
-      "You can support IRAID through financial donations, corporate or development partnerships, volunteering your professional skills, sponsoring programs like youth empowerment or women's microfinance, spreading awareness, or providing equipment, training materials, or technical expertise. Contact us at officiallyiraid@gmail.com.",
+    answer: `You can support IRAID through financial donations, corporate or development partnerships, volunteering your professional skills, sponsoring programs like youth empowerment or women's microfinance, spreading awareness, or providing equipment, training materials, or technical expertise. Contact us at ${organization.email}.`,
   },
-] as const;
-
-export const approaches = [
-  [
-    "01",
-    "Listen locally",
-    "Communities help define the challenge, the priorities and what lasting success should look like.",
-  ],
-  [
-    "02",
-    "Build together",
-    "Residents, institutions and local leaders share ownership from planning through delivery.",
-  ],
-  [
-    "03",
-    "Strengthen capacity",
-    "Projects combine useful infrastructure with the skills and systems needed to sustain it.",
-  ],
 ] as const;
 
 export const programmeDetails = [
@@ -176,6 +111,11 @@ export const programmeDetails = [
       ["/IRAID/01.PNG", "Community engagement of men’s Executive leaders at Nkata Ibeku community in Umuahia North LGA."],
       ["/IRAID/02.PNG", "Engaging with the vulnerable group (Widows) in the Abia NEWMAP/World Bank Resettlement program at Uzuakoli, Bende LGA."],
     ],
+    callout: {
+      title: "A documented field example",
+      text: "In the World Bank-assisted Abia NEWMAP project (2018), IRAID’s work included community engagement with leaders at Nkata Ibeku, support for vulnerable widows at Uzuakoli in Bende LGA, and palm-oil processing work at Okagwe, Ohafia.",
+    },
+    processSteps: null,
   },
   {
     eyebrow: "Enterprises Development",
@@ -193,6 +133,19 @@ export const programmeDetails = [
       ["/IRAID/05.PNG", "Group of women processing cassava for garri production."],
       ["/IRAID/06.PNG", "Associate Savings and Credit Associations (ASCAs) members during a meeting session."],
     ],
+    callout: {
+      title: "Women building together",
+      text: "Community-based women’s groups work together to strengthen income generation, share responsibility and create a foundation for sustainable enterprise.",
+    },
+    processSteps: {
+      title: "How the microfinance model works",
+      items: [
+        "Women form or join community-based savings groups and ASCAs.",
+        "Members save regularly and assess loan applications collectively.",
+        "Loans support productive ventures, with use tracked by the group.",
+        "Peer guarantees, repayment monitoring and mentoring support accountability.",
+      ],
+    },
   },
   {
     eyebrow: "Agriculture",
@@ -208,6 +161,8 @@ export const programmeDetails = [
       ["/IRAID/10.PNG", "Young persons engaged in local poultry production."],
       ["/IRAID/11.PNG", "A young man engaged in piggery."],
     ],
+    callout: null,
+    processSteps: null,
   },
   {
     eyebrow: "Skill Acquisition",
@@ -225,18 +180,39 @@ export const programmeDetails = [
       ["/IRAID/14.PNG", "Enterprises education for unemployed youths at Uzuakoli community, Bende LGA, during the World Bank-assisted Abia NEWMAP project (2018)."],
       ["/IRAID/15.PNG", "Another empowerment class during the NEWMAP project."],
     ],
+    callout: {
+      title: "From training to enterprise",
+      text: "IRAID trains women and youths to start profitable businesses either individually or as cooperatives, so skills acquisition can lead to practical livelihoods and shared economic opportunity.",
+    },
+    processSteps: null,
   },
   {
     eyebrow: "Health Outreach",
     title: "Rural Health Support",
     paragraphs: [
-      "A rural health centre was equipped by IRAID through assistance from donors from Florida, USA.",
+      "IRAID’s family health work begins by listening to residents and local health partners. This community-led approach helps identify practical barriers to care, reduce preventable illness and make essential health services easier to reach.",
+      "With assistance from donors in Florida, USA, IRAID equipped a rural health centre in Umuahia North LGA. The Mbom Health equipping project was formally handed over to the community, helping to place the supported facility under local ownership and stewardship.",
+      "IRAID’s broader health programme includes family and reproductive health initiatives, health awareness and HIV/AIDS education. Project records also document a tuberculosis care initiative delivered with the Health Alive Foundation, which provided community sensitization, testing, medication support and education to reduce stigma.",
+      "By combining facility support with outreach, health education and trusted local partnerships, IRAID works to strengthen both the services available to rural families and the knowledge communities need to protect their well-being.",
     ],
     images: [
       ["/IRAID/health1.jpg", "During the handing-over ceremony of a rural health centre in Umuahia North LGA."],
       ["/IRAID/health2.jpg", "Handing-over ceremony of the Mbom Health equipping project to the community."],
       ["/IRAID/health3.jpg", "Handing-over ceremony at the community."],
     ],
+    callout: {
+      title: "Health support rooted in community",
+      text: "Effective rural health support goes beyond equipment. IRAID brings together practical resources, community education and local participation so each intervention responds to an identified need and can be sustained by the people it serves.",
+    },
+    processSteps: {
+      title: "How the health programme works",
+      items: [
+        "Engage residents and local health partners to understand priority needs and barriers to care.",
+        "Mobilize donor and technical support for appropriate equipment and community outreach.",
+        "Deliver sensitization, testing and health education with trusted programme partners.",
+        "Hand over supported facilities and encourage local ownership, stewardship and accountability.",
+      ],
+    },
   },
 ] as const;
 
@@ -250,10 +226,11 @@ export type Story = {
   excerpt: string;
   image: string;
   imageAlt: string;
+  coverPosition?: string;
   quote: string;
   quoteAttribution: string;
   paragraphs: string[];
-  gallery: { image: string; alt: string }[];
+  gallery: { image: string; alt: string; objectPosition?: string }[];
 };
 
 export const stories: Story[] = [
@@ -266,8 +243,9 @@ export const stories: Story[] = [
     readTime: "6 min read",
     excerpt:
       "A closer look at how clear reporting turns every contribution into a shared story of progress.",
-    image: "/assets/img/blog/blog-s-1-1.jpg",
-    imageAlt: "Children smiling together in their community",
+    image: "/assets/img/img/community/P18.jpeg",
+    imageAlt: "IRAID field team documenting support with a community member",
+    coverPosition: "center 25%",
     quote:
       "When communities can see what has changed, they become even stronger partners in what comes next.",
     quoteAttribution: "IRAID field team",
@@ -277,8 +255,12 @@ export const stories: Story[] = [
       "The result is more than a report. It is a living record of people solving problems together, from safer water access and healthier families to skills that open new paths to income.",
     ],
     gallery: [
-      { image: "/assets/img/blog/blog_inner_1.jpg", alt: "Community members gathered outdoors" },
-      { image: "/assets/img/blog/blog_inner_2.jpg", alt: "A child smiling in a rural community" },
+      { image: "/assets/img/img/signPost/P52.jpeg", alt: "Project sign identifying a community development investment" },
+      {
+        image: "/assets/img/img/community/P29.jpeg",
+        alt: "Community members working together on a field project",
+        objectPosition: "center 18%",
+      },
     ],
   },
   {
@@ -290,8 +272,8 @@ export const stories: Story[] = [
     readTime: "5 min read",
     excerpt:
       "Why reliable water access is about much more than infrastructure—it is about health, time and possibility.",
-    image: "/assets/img/blog/blog-s-1-2.jpg",
-    imageAlt: "Child smiling in water",
+    image: "/assets/img/img/water/P24.jpeg",
+    imageAlt: "Community members gathered around a newly installed water point",
     quote:
       "The best solutions are the ones that give families back something they can never buy: time.",
     quoteAttribution: "Community health partner",
@@ -306,8 +288,8 @@ export const stories: Story[] = [
         alt: "Community members gathered around a flowing water point.",
       },
       {
-        image: "/assets/img/img/water/P24.jpeg",
-        alt: "Residents using a community hand pump.",
+        image: "/assets/img/img/water/P35.jpeg",
+        alt: "Workers installing pipes for a community water project.",
       },
     ],
   },
@@ -320,8 +302,8 @@ export const stories: Story[] = [
     readTime: "4 min read",
     excerpt:
       "Practical training helps women and young people turn confidence into sustainable livelihoods.",
-    image: "/assets/img/blog/blog-s-1-3.jpg",
-    imageAlt: "Artisan shaping a clay pot",
+    image: "/assets/img/img/close-up-happy-woman-selling-food.jpg",
+    imageAlt: "Woman running a small food enterprise in her community",
     quote:
       "A skill is not only a way to earn. It is a reason to believe that tomorrow can look different.",
     quoteAttribution: "IRAID programme facilitator",
@@ -331,8 +313,8 @@ export const stories: Story[] = [
       "The most important outcome is ownership. Participants leave with more than a certificate—they leave with a stronger network, a clearer plan and the confidence to keep building.",
     ],
     gallery: [
-      { image: "/IRAID/12.PNG", alt: "Young woman taking part in skills training" },
-      { image: "/IRAID/13.PNG", alt: "Women learning bakery skills" },
+      { image: "/IRAID/12.PNG", alt: "Young woman practising a textile-making skill" },
+      { image: "/IRAID/06.PNG", alt: "Women taking part in an enterprise training session" },
     ],
   },
   {
@@ -344,8 +326,8 @@ export const stories: Story[] = [
     readTime: "5 min read",
     excerpt:
       "Education becomes powerful when it gives children the tools, safety and encouragement to imagine more.",
-    image: "/assets/img/blog/blog-s-1-4.jpg",
-    imageAlt: "Children holding boxing gloves outdoors",
+    image: "/IRAID/14.PNG",
+    imageAlt: "Young people attending an IRAID learning session",
     quote:
       "A child’s confidence is one of the first signs that a community’s future is opening up.",
     quoteAttribution: "Education programme volunteer",
@@ -355,8 +337,8 @@ export const stories: Story[] = [
       "When families, schools and local leaders share responsibility for that progress, education becomes a community asset—one that keeps creating possibilities long after a single programme ends.",
     ],
     gallery: [
-      { image: "/IRAID/14.PNG", alt: "Youth empowerment class" },
-      { image: "/IRAID/15.PNG", alt: "Young people participating in a community programme" },
+      { image: "/IRAID/15.PNG", alt: "Students participating in a community learning session" },
+      { image: "/assets/img/img/community/P25.jpeg", alt: "Community members gathered for a learning discussion" },
     ],
   },
 ];

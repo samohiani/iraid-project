@@ -1,13 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CallToActionSection } from "@/components/call-to-action-section";
 import { DonationCampaign } from "@/components/donation-campaign";
+import { DonationProcessSection } from "@/components/donation-process-section";
 import { FaqSection } from "@/components/faq-section";
 import { HomepageIntro } from "@/components/homepage-intro";
 import { ImpactStats } from "@/components/impact-stats";
-import { TestimonialRail } from "@/components/testimonial-rail";
-import { TrusteeCarousel } from "@/components/trustee-carousel";
+import {
+  TestimonialsSection,
+  TrusteesSection,
+} from "@/components/people-sections";
 import { VideoModal } from "@/components/video-modal";
-import { process, programmes } from "@/data/site-content";
+import { programmes } from "@/data/site-content";
 
 export default function HomePage() {
   return (
@@ -286,85 +290,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="home-section trustees-section">
-        <div className="center-heading trustee-heading">
-          <p className="section-kicker">Our Team</p>
-          <h2>Meet The Trustees</h2>
-        </div>
-        <TrusteeCarousel />
-      </section>
+      <TrusteesSection className="home-section trustees-section" />
 
-      <section className="home-section testimonial-section">
-        <div className="center-heading">
-          <p className="section-kicker">Testimonials</p>
-          <h2>What The People Of Abia Had To Say?</h2>
-        </div>
-        <TestimonialRail />
-      </section>
+      <TestimonialsSection
+        className="home-section testimonial-section"
+        title="What The People Of Abia Had To Say?"
+      />
 
-      <section className="home-section process-section">
-        <Image
-          className="process-hand"
-          src="/assets/img/shape/hand-bg-shape2-1.png"
-          alt=""
-          width={208}
-          height={176}
-        />
-        <div className="center-heading">
-          <p className="section-kicker">Work Process</p>
-          <h2>Our Donating Work Process</h2>
-        </div>
-        <div className="process-grid">
-          {process.map(([, title, text], index) => (
-            <article className="process-card" key={title}>
-              <div className="process-card-thumb-wrap">
-                <div className="process-card-thumb">
-                  <Image
-                    src="/assets/img/process/process-card-1-1.png"
-                    alt=""
-                    fill
-                    sizes="298px"
-                  />
-                </div>
-                <span className="process-card-icon" aria-hidden="true">
-                  <Image
-                    src={`/assets/img/icon/process-icon1-${index + 1}.svg`}
-                    alt=""
-                    width={70}
-                    height={70}
-                  />
-                </span>
-                <Image
-                  className="process-card-shape"
-                  src="/assets/img/process/process-card-shape2.png"
-                  alt=""
-                  width={136}
-                  height={166}
-                />
-              </div>
-              <div className="process-card-content">
-                <h3>{title}</h3>
-                <p>{text}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
+      <DonationProcessSection
+        className="home-section process-section"
+        showHand
+      />
 
       <FaqSection />
 
-      <section className="home-cta">
-        <div>
-          <p className="section-kicker">Call to Action</p>
-          <h2>Lend a Hand to a Community</h2>
-          <p>
-            Partner with IRAID to support practical, locally led development.
-          </p>
-        </div>
-        <Link className="primary-button light-button" href="/contact">
-          Get Involved Today <span>↗</span>
-        </Link>
-      </section>
+      <CallToActionSection
+        eyebrow="Call to Action"
+        title="Lend a Hand to a Community"
+        body="Partner with IRAID to support practical, locally led development."
+        actionLabel="Get Involved Today"
+      />
     </>
   );
 }

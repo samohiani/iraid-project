@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHero } from "@/components/page-hero";
+import {
+  contactFormAction,
+  organization,
+  organizationEmailHref,
+} from "@/data/organization";
 
 export const metadata: Metadata = { title: "Contact" };
 
@@ -57,7 +62,7 @@ export default function ContactPage() {
               <div>
                 <p className="contact-label">Visit us</p>
                 <h3>Our office</h3>
-                <p>No. 36, Bende Road, Umuahia, Abia State</p>
+                <p>{organization.address}</p>
               </div>
             </article>
             <article className="contact-info-card">
@@ -68,11 +73,11 @@ export default function ContactPage() {
                 <p className="contact-label">Call us</p>
                 <h3>Let’s talk</h3>
                 <p>
-                  <a href="tel:+2349125625007">+234 912 562 5007</a>
-                  <br />
-                  <a href="tel:+2348065902793">+234 806-590-2793</a>
-                  <br />
-                  <a href="tel:+2348065940004">+234 806-594-0004</a>
+                  {organization.phones.map((phone) => (
+                    <a href={phone.href} key={phone.href}>
+                      {phone.display}
+                    </a>
+                  ))}
                 </p>
               </div>
             </article>
@@ -84,9 +89,7 @@ export default function ContactPage() {
                 <p className="contact-label">Email us</p>
                 <h3>Write to the team</h3>
                 <p>
-                  <a href="mailto:officiallyiraid@gmail.com">
-                    officiallyiraid@gmail.com
-                  </a>
+                  <a href={organizationEmailHref}>{organization.email}</a>
                 </p>
               </div>
               <div className="contact-card-side-note">
@@ -95,7 +98,7 @@ export default function ContactPage() {
               </div>
               <a
                 className="contact-card-action"
-                href="mailto:officiallyiraid@gmail.com"
+                href={organizationEmailHref}
               >
                 Send an email <span>↗</span>
               </a>
@@ -118,7 +121,7 @@ export default function ContactPage() {
         <form
           id="contact-form"
           className="contact-form contact-form-card"
-          action="https://formsubmit.co/officiallyiraid@gmail.com"
+          action={contactFormAction}
           method="POST"
         >
           <input

@@ -1,16 +1,18 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { trustees } from "@/data/site-content";
 import { TrusteeCard } from "@/components/trustee-card";
+import { trustees } from "@/data/trustees";
 
 const AUTOPLAY_DELAY = 5200;
+const VISIBLE_TRUSTEE_COUNT = 3;
 
 export function TrusteeCarousel() {
   const [start, setStart] = useState(0);
   const [direction, setDirection] = useState<"next" | "previous">("next");
   const [paused, setPaused] = useState(false);
-  const visible = trustees.map(
+  const visible = Array.from(
+    { length: VISIBLE_TRUSTEE_COUNT },
     (_, offset) => trustees[(start + offset) % trustees.length],
   );
 

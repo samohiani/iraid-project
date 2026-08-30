@@ -49,7 +49,15 @@ export default async function StoryPage({ params }: StoryPageProps) {
 
       <main className="story-detail-main">
         <div className="story-detail-cover">
-          <Image src={story.image} alt={story.imageAlt} fill priority sizes="(max-width: 900px) 100vw, 1180px" />
+          <Image
+            src={story.image}
+            alt={story.imageAlt}
+            fill
+            priority
+            quality={90}
+            sizes="(max-width: 900px) 100vw, 1180px"
+            style={{ objectPosition: story.coverPosition ?? "center" }}
+          />
         </div>
 
         <div className="story-detail-layout">
@@ -73,7 +81,14 @@ export default async function StoryPage({ params }: StoryPageProps) {
             <div className="story-detail-gallery">
               {story.gallery.map((image) => (
                 <figure key={image.image}>
-                  <Image src={image.image} alt={image.alt} fill sizes="(max-width: 620px) 100vw, 38vw" />
+                  <Image
+                    src={image.image}
+                    alt={image.alt}
+                    fill
+                    quality={90}
+                    sizes="(max-width: 620px) 100vw, 38vw"
+                    style={{ objectPosition: image.objectPosition ?? "center" }}
+                  />
                 </figure>
               ))}
             </div>
