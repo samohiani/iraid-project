@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PageHeader } from "@/components/page-header";
+import { PageHero } from "@/components/page-hero";
 import { TrusteeCard } from "@/components/trustee-card";
 import { trustees } from "@/data/trustees";
 
@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "Our team" };
 export default function TeamPage() {
   return (
     <>
-      <PageHeader
+      <PageHero
         eyebrow="Our team"
         title="Meet The Trustees"
         body="Meet the people responsible for guiding Integrated Rural Aid Foundation and its community development work."

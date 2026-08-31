@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { PageHero } from "@/components/page-hero";
 import { stories } from "@/data/site-content";
 
 export const metadata: Metadata = {
@@ -13,37 +14,11 @@ export default function BlogPage() {
 
   return (
     <>
-      <section className="blog-hero" aria-labelledby="blog-page-title">
-        <div className="blog-hero-copy">
-          <p className="section-kicker">From the field</p>
-          <h1 id="blog-page-title">
-            Stories that make <em>impact</em> visible.
-          </h1>
-          <p>
-            A closer look at the people, ideas and practical work helping rural
-            communities build stronger futures.
-          </p>
-          <div className="blog-hero-actions">
-            <a className="primary-button" href="#latest-stories">
-              Explore the stories <span>↓</span>
-            </a>
-            <span className="blog-hero-note">Real work. Shared openly.</span>
-          </div>
-        </div>
-        <div className="blog-hero-panel" aria-label="IRAID story highlights">
-          <div className="blog-hero-panel-orbit" aria-hidden="true" />
-          <p className="blog-hero-panel-label">IRAID journal / 2025</p>
-          <div className="blog-hero-panel-mark">↗</div>
-          <div className="blog-hero-panel-copy">
-            <strong>People first.</strong>
-            <span>Progress that lasts.</span>
-          </div>
-          <div className="blog-hero-panel-footer">
-            <span>04</span>
-            <span>stories to explore</span>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="From the field"
+        title="Stories that make impact visible."
+        body="A closer look at the people, ideas and practical work helping rural communities build stronger futures."
+      />
 
       <section className="inner-section blog-listing" id="latest-stories">
         <div className="blog-section-heading">
@@ -101,6 +76,7 @@ export default function BlogPage() {
                       src={story.image}
                       alt={story.imageAlt}
                       fill
+                      loading="eager"
                       sizes="(max-width: 620px) 100vw, 30vw"
                     />
                     <span className="blog-image-arrow" aria-hidden="true">↗</span>

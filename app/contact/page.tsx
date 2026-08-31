@@ -109,6 +109,7 @@ export default function ContactPage() {
               src="/assets/photos/farmer.webp"
               alt="A woman working among crops in a rural farm"
               fill
+              priority
               sizes="(max-width: 820px) 92vw, 42vw"
             />
             <div className="contact-visual-caption">
