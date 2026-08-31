@@ -21,7 +21,7 @@ export function FaqSection() {
       <div className="faq-visual" aria-hidden="true">
         <div className="faq-visual-main">
           <Image
-            src="/assets/img/img/water/P44.jpeg"
+            src="/assets/img/img/water/P44.webp"
             alt=""
             fill
             sizes="(max-width: 820px) 92vw, 40vw"

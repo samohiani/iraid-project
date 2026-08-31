@@ -101,7 +101,7 @@ export default function HomePage() {
           <div className="hero-portrait-shadow" aria-hidden="true" />
           <div className="hero-portrait">
             <Image
-              src="/assets/img/hero/hero_thumb_1_1.jpg"
+              src="/assets/img/hero/hero_thumb_1_1.webp"
               alt="A child in a rural community"
               fill
               priority
@@ -136,7 +136,7 @@ export default function HomePage() {
           />
           <div className="about-image about-image-main">
             <Image
-              src="/assets/img/normal/about_2_1.png"
+              src="/assets/img/normal/about_2_1.webp"
               alt="IRAID community work"
               fill
               sizes="(max-width: 820px) 90vw, 42vw"
@@ -277,7 +277,7 @@ export default function HomePage() {
         <div className="donation-media">
           <div className="donation-image">
             <Image
-              src="/assets/img/img/water/P30.jpeg"
+              src="/assets/img/img/water/P30.webp"
               alt="IRAID water project"
               fill
               sizes="(max-width: 820px) 92vw, 46vw"

@@ -772,7 +772,7 @@ textarea {
 .programme-section {
   position: relative;
   background: var(--soft)
-    url("/assets/img/bg/gray-bg2.png") center top / cover no-repeat;
+    url("/assets/img/bg/gray-bg2.webp") center top / cover no-repeat;
 }
 .programme-heart {
   position: absolute;
@@ -1609,7 +1609,7 @@ textarea {
   color: #fff;
   background:
     linear-gradient(rgba(16, 77, 67, 0.86), rgba(16, 77, 67, 0.86)),
-    url("/assets/img/bg/cta-bg1-1.jpg") center/cover;
+    url("/assets/img/bg/cta-bg1-1.webp") center/cover;
 }
 .page-hero > div {
   width: min(880px, 100%);
@@ -2871,7 +2871,7 @@ html[data-iraid-intro="skip"] .homepage-intro {
         rgba(26, 104, 91, 0.96) 58%,
         #082b26 100%
       ),
-      url("/assets/img/img/bg.png") center/cover;
+      url("/assets/img/img/bg.webp") center/cover;
     visibility: hidden;
     pointer-events: none;
     clip-path: circle(0 at calc(100% - 38px) 42px);

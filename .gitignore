@@ -1,8 +1,8 @@
 node_modules/
 .next/
-.vinext/
 .vercel/
-.output/
+.playwright-cli/
+dist/
 .env*
 !.env.example
 *.log

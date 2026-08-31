@@ -136,7 +136,7 @@ export default function AboutPage() {
           </div>
           <div className="about-overview-image about-overview-image-small">
             <Image
-              src="/IRAID/01.PNG"
+              src="/IRAID/01.webp"
               alt="IRAID community engagement in Nkata Ibeku"
               fill
               sizes="(max-width: 820px) 44vw, 18vw"
@@ -152,7 +152,7 @@ export default function AboutPage() {
       <section className="inner-section about-mission" id="mission">
         <div className="about-mission-image">
           <Image
-            src="/IRAID/FOR%20IRAID%203.jpg"
+            src="/IRAID/FOR%20IRAID%203.webp"
             alt="IRAID programmes and community enterprise"
             fill
             sizes="(max-width: 820px) 92vw, 43vw"
