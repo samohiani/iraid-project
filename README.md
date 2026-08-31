@@ -68,7 +68,7 @@ Page-specific layout and behaviour lives in `app/` and `components/`. Keep repea
 Static media is served from `public/` and referenced with URL paths beginning with `/`, for example:
 
 ```tsx
-<Image src="/assets/img/img/community/P28.webp" alt="..." />
+<Image src="/assets/photos/community/P28.webp" alt="..." />
 ```
 
 Photographic assets use WebP where an optimised version is available. PNG and SVG files are retained for transparency, logos, masks, icons, and decorative shapes. When adding a new photograph, prefer an appropriately sized WebP rather than adding another large source image to the deployed `public/` directory.

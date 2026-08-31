@@ -6,7 +6,7 @@ export function DonationCampaign() {
     <article className="donation-campaign">
       <div className="donation-campaign-image">
         <Image
-          src="/assets/img/donation/donation2-1.png"
+          src="/assets/donation/donation2-1.png"
           alt="A smiling child supported by IRAID"
           fill
           sizes="(max-width: 820px) 88vw, 180px"

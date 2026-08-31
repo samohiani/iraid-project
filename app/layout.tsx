@@ -41,7 +41,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <link rel="icon" href="/assets/img/favicon/favicon.ico" />
+        <link rel="icon" href="/assets/favicon/favicon.ico" />
         <script
           id="iraid-intro-state"
           dangerouslySetInnerHTML={{ __html: homepageIntroStateScript }}

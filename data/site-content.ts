@@ -4,38 +4,38 @@ export const programmes = [
   {
     title: "Community Development",
     text: "Empowering communities from within. See how our volunteers are making a lasting impact and find out how you can get involved.",
-    image: "/assets/img/img/community/P28.webp",
-    icon: "/assets/img/icon/service-icon/service-card-icon1-1.svg",
+    image: "/assets/photos/community/P28.webp",
+    icon: "/assets/icons/service-icon/service-card-icon1-1.svg",
   },
   {
     title: "Educations for change",
     text: "Unlocking potential through learning. Discover our educational initiatives that are creating brighter futures for children and adults alike.",
-    image: "/assets/img/service/service_card_1_2.png",
-    icon: "/assets/img/icon/service-icon/service-card-icon1-2.svg",
+    image: "/assets/service/service_card_1_2.png",
+    icon: "/assets/icons/service-icon/service-card-icon1-2.svg",
   },
   {
     title: "Agriculture",
     text: "Sowing the seeds of sustainability. Learn about our agricultural projects that are nourishing communities and fostering self-reliance.",
-    image: "/assets/img/img/agric/P12.webp",
-    icon: "/assets/img/icon/service-icon/new.webp",
+    image: "/assets/photos/agriculture/P12.webp",
+    icon: "/assets/icons/service-icon/new.webp",
   },
   {
     title: "Family Health",
     text: "Nurturing well-being for all ages. Explore our programs dedicated to providing essential healthcare and promoting healthy families.",
-    image: "/assets/img/service/service_card_1_3.png",
-    icon: "/assets/img/icon/service-icon/service-card-icon1-3.svg",
+    image: "/assets/service/service_card_1_3.png",
+    icon: "/assets/icons/service-icon/service-card-icon1-3.svg",
   },
   {
     title: "Economic Empowerment especially women and youths",
     text: "Building futures through opportunity. Read inspiring stories of women and young people achieving financial independence and learn how you can support their journey.",
-    image: "/assets/img/img/medium-shot-women-posing-market.webp",
-    icon: "/assets/img/icon/service-icon/women-removebg-preview.webp",
+    image: "/assets/photos/medium-shot-women-posing-market.webp",
+    icon: "/assets/icons/service-icon/women-removebg-preview.webp",
   },
   {
     title: "Capacity-Building",
     text: "Strengthening leaders, transforming communities. Discover how we equip local leaders with the skills and resources to drive positive change.",
-    image: "/assets/img/img/industrial-designers-working-3d-model.webp",
-    icon: "/assets/img/icon/service-icon/service.webp",
+    image: "/assets/photos/industrial-designers-working-3d-model.webp",
+    icon: "/assets/icons/service-icon/service.webp",
   },
 ];
 
@@ -243,7 +243,7 @@ export const stories: Story[] = [
     readTime: "6 min read",
     excerpt:
       "A closer look at how clear reporting turns every contribution into a shared story of progress.",
-    image: "/assets/img/img/community/P18.webp",
+    image: "/assets/photos/community/P18.webp",
     imageAlt: "IRAID field team documenting support with a community member",
     coverPosition: "center 25%",
     quote:
@@ -255,9 +255,9 @@ export const stories: Story[] = [
       "The result is more than a report. It is a living record of people solving problems together, from safer water access and healthier families to skills that open new paths to income.",
     ],
     gallery: [
-      { image: "/assets/img/img/signPost/P52.webp", alt: "Project sign identifying a community development investment" },
+      { image: "/assets/photos/signposts/P52.webp", alt: "Project sign identifying a community development investment" },
       {
-        image: "/assets/img/img/community/P29.webp",
+        image: "/assets/photos/community/P29.webp",
         alt: "Community members working together on a field project",
         objectPosition: "center 18%",
       },
@@ -272,7 +272,7 @@ export const stories: Story[] = [
     readTime: "5 min read",
     excerpt:
       "Why reliable water access is about much more than infrastructure—it is about health, time and possibility.",
-    image: "/assets/img/img/water/P24.webp",
+    image: "/assets/photos/water/P24.webp",
     imageAlt: "Community members gathered around a newly installed water point",
     quote:
       "The best solutions are the ones that give families back something they can never buy: time.",
@@ -284,11 +284,11 @@ export const stories: Story[] = [
     ],
     gallery: [
       {
-        image: "/assets/img/img/water/P27.webp",
+        image: "/assets/photos/water/P27.webp",
         alt: "Community members gathered around a flowing water point.",
       },
       {
-        image: "/assets/img/img/water/P35.webp",
+        image: "/assets/photos/water/P35.webp",
         alt: "Workers installing pipes for a community water project.",
       },
     ],
@@ -302,7 +302,7 @@ export const stories: Story[] = [
     readTime: "4 min read",
     excerpt:
       "Practical training helps women and young people turn confidence into sustainable livelihoods.",
-    image: "/assets/img/img/close-up-happy-woman-selling-food.webp",
+    image: "/assets/photos/close-up-happy-woman-selling-food.webp",
     imageAlt: "Woman running a small food enterprise in her community",
     quote:
       "A skill is not only a way to earn. It is a reason to believe that tomorrow can look different.",
@@ -338,7 +338,7 @@ export const stories: Story[] = [
     ],
     gallery: [
       { image: "/IRAID/15.webp", alt: "Students participating in a community learning session" },
-      { image: "/assets/img/img/community/P25.webp", alt: "Community members gathered for a learning discussion" },
+      { image: "/assets/photos/community/P25.webp", alt: "Community members gathered for a learning discussion" },
     ],
   },
 ];
@@ -348,35 +348,35 @@ export const testimonials = [
     name: "Mrs. Adanna Kelechi",
     location: "Nkata Community, Umuahia North L.G.A.",
     image:
-      "/assets/img/img/reviews/close-up-business-african-woman-smiling-camera-after-typing-laptop.webp",
+      "/assets/photos/reviews/close-up-business-african-woman-smiling-camera-after-typing-laptop.webp",
     quote:
       "For years, my day started before the sun rose with a long trek to the stream. My back ached, and my daughters often missed the start of school because they had to help me fetch water. We were always worried about getting sick from the dirty water, and my children often suffered from running stomachs. When IRAID came to our community and installed the solar-powered borehole, it was like a miracle. Now, clean, safe water is just a few steps from my home. My children are healthier, and they never miss school anymore. The new toilets they built at the school have also made a huge difference. God will bless Professor Ugwueje and the entire IRAID team for bringing this life-changing project to us. They didn't just give us water; they gave us back our time, our health, and our dignity.",
   },
   {
     name: "Mr. Uche Okorie",
     location: "Isiala Ngwa South L.G.A.",
-    image: "/assets/img/img/reviews/stylish-young-man-sitting-cafe.webp",
+    image: "/assets/photos/reviews/stylish-young-man-sitting-cafe.webp",
     quote:
       "When my uncle was diagnosed with Tuberculosis, there was a lot of fear and shame in our family. We didn't know what to do. The team from IRAID, working with the Health Alive Foundation, was a saving grace. They came to our community with their TB care project, providing free sensitization, testing, and support. They treated my uncle with so much kindness and professionalism and made sure he got his medication. They taught us that TB is curable and helped fight the stigma. We are forever grateful for their work in family health, which brought healing and hope to our doorstep when we needed it most.",
   },
   {
     name: "Chief Emeka O. Anya",
     location: "Ohafia L.G.A.",
-    image: "/assets/img/img/reviews/medium-shot-old-man-exterior-portrait.webp",
+    image: "/assets/photos/reviews/medium-shot-old-man-exterior-portrait.webp",
     quote:
       "We have seen many organizations and politicians come with big promises, only to disappear. So, when IRAID first came, we were skeptical. But they were different. They did not just talk; they listened. They involved us in every step, forming a Project Management Committee with our own people to oversee the construction of our new health centre. Their commitment to integrity and accountability is something I have never seen before. They completed the project on time and with high-quality materials. IRAID is not just an NGO; they are true community partners who build capacity and leave a lasting legacy.",
   },
   {
     name: "Mr. Ndukwe Kalu",
     location: "Bende L.G.A.",
-    image: "/assets/img/img/reviews/african-senior-man-portrait.webp",
+    image: "/assets/photos/reviews/african-senior-man-portrait.webp",
     quote:
       "As a farmer, my livelihood depends on the weather, and things have been very difficult. But through IRAID's agriculture program, I learned new farming techniques that have more than doubled my yam harvest. They introduced us to improved seedlings and taught us how to manage our resources better. They also facilitated the building of a new rural road in our area, which means I can now take my produce to the market in Umuahia easily without it spoiling. They are helping the rural farmer stand on his own feet. Thank you, IRAID.",
   },
   {
     name: "Mrs. Blessing Ibe",
     location: "Nkata Community, Umuahia North L.G.A.",
-    image: "/assets/img/img/reviews/medium-shot-senior-black-woman-posing.webp",
+    image: "/assets/photos/reviews/medium-shot-senior-black-woman-posing.webp",
     quote:
       "As a teacher, it was heartbreaking to see my pupils miss school so often because of diseases like typhoid and cholera. The lack of clean water and proper toilets was a major problem. Since IRAID installed the borehole and the new VIP latrines on our school compound, attendance has shot up! The hygiene education they gave to both teachers and students has created a new culture of cleanliness. The children are healthier, more active, and can now focus fully on their studies. IRAID understands that a child's health is the foundation for their education.",
   },
@@ -401,13 +401,13 @@ export const galleryItems = [
   ["Health", "/IRAID/health1.jpg", "Handing over a rural health centre"],
   ["Health", "/IRAID/health2.jpg", "Equipping the Mbom community clinic"],
   ["Health", "/IRAID/health3.jpg", "Celebrating a healthier community"],
-  ["Agriculture", "/assets/img/img/agric/P10.webp", "Investing in rural livelihoods"],
-  ["Agriculture", "/assets/img/img/agric/P11.webp", "Women leading local enterprise"],
-  ["Water", "/assets/img/img/water/P20.webp", "A safer route to clean water"],
-  ["Water", "/assets/img/img/water/P23.webp", "Community infrastructure that lasts"],
-  ["Community", "/assets/img/img/community/P18.webp", "Local leadership in action"],
-  ["Community", "/assets/img/img/community/P22.webp", "Stronger communities, together"],
-  ["Roads", "/assets/img/img/road/P1.webp", "Connecting communities to opportunity"],
-  ["Roads", "/assets/img/img/road/P3.webp", "Better access for everyday life"],
-  ["Signposts", "/assets/img/img/signPost/P15.webp", "Making progress visible"],
+  ["Agriculture", "/assets/photos/agriculture/P10.webp", "Investing in rural livelihoods"],
+  ["Agriculture", "/assets/photos/agriculture/P11.webp", "Women leading local enterprise"],
+  ["Water", "/assets/photos/water/P20.webp", "A safer route to clean water"],
+  ["Water", "/assets/photos/water/P23.webp", "Community infrastructure that lasts"],
+  ["Community", "/assets/photos/community/P18.webp", "Local leadership in action"],
+  ["Community", "/assets/photos/community/P22.webp", "Stronger communities, together"],
+  ["Roads", "/assets/photos/roads/P1.webp", "Connecting communities to opportunity"],
+  ["Roads", "/assets/photos/roads/P3.webp", "Better access for everyday life"],
+  ["Signposts", "/assets/photos/signposts/P15.webp", "Making progress visible"],
 ] as const;

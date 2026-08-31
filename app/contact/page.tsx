@@ -106,7 +106,7 @@ export default function ContactPage() {
           </div>
           <div className="contact-visual-card">
             <Image
-              src="/assets/img/img/farmer.webp"
+              src="/assets/photos/farmer.webp"
               alt="A woman working among crops in a rural farm"
               fill
               sizes="(max-width: 820px) 92vw, 42vw"

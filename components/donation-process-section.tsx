@@ -19,7 +19,7 @@ export function DonationProcessSection({
       {showHand ? (
         <Image
           className="process-hand"
-          src="/assets/img/shape/hand-bg-shape2-1.png"
+          src="/assets/shape/hand-bg-shape2-1.png"
           alt=""
           width={208}
           height={176}
@@ -36,7 +36,7 @@ export function DonationProcessSection({
             <div className="process-card-thumb-wrap">
               <div className="process-card-thumb">
                 <Image
-                  src="/assets/img/process/process-card-1-1.png"
+                  src="/assets/process/process-card-1-1.png"
                   alt=""
                   fill
                   sizes="(max-width: 700px) 85vw, 298px"
@@ -44,7 +44,7 @@ export function DonationProcessSection({
               </div>
               <span className="process-card-icon" aria-hidden="true">
                 <Image
-                  src={`/assets/img/icon/process-icon1-${index + 1}.svg`}
+                  src={`/assets/icons/process-icon1-${index + 1}.svg`}
                   alt=""
                   width={72}
                   height={72}
@@ -52,7 +52,7 @@ export function DonationProcessSection({
               </span>
               <Image
                 className="process-card-shape"
-                src="/assets/img/process/process-card-shape2.png"
+                src="/assets/process/process-card-shape2.png"
                 alt=""
                 width={136}
                 height={166}

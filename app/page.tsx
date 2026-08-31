@@ -20,7 +20,7 @@ export default function HomePage() {
       <section className="home-hero">
         <Image
           className="hero-brush"
-          src="/assets/img/hero/hero-bg-shape2-8.png"
+          src="/assets/hero/hero-bg-shape2-8.png"
           alt=""
           width={1036}
           height={787}
@@ -28,42 +28,42 @@ export default function HomePage() {
         />
         <Image
           className="hero-floating-shape hero-floating-shape-one"
-          src="/assets/img/hero/hero-bg-shape2-1.png"
+          src="/assets/hero/hero-bg-shape2-1.png"
           alt=""
           width={109}
           height={101}
         />
         <Image
           className="hero-floating-shape hero-floating-shape-two"
-          src="/assets/img/hero/hero-bg-shape2-2.png"
+          src="/assets/hero/hero-bg-shape2-2.png"
           alt=""
           width={70}
           height={100}
         />
         <Image
           className="hero-floating-shape hero-floating-shape-three"
-          src="/assets/img/hero/hero-bg-shape2-4.png"
+          src="/assets/hero/hero-bg-shape2-4.png"
           alt=""
           width={30}
           height={34}
         />
         <Image
           className="hero-bottom-shape hero-bottom-shape-orange"
-          src="/assets/img/hero/hero-bg-shape2-5.png"
+          src="/assets/hero/hero-bg-shape2-5.png"
           alt=""
           width={69}
           height={160}
         />
         <Image
           className="hero-bottom-shape hero-bottom-shape-green"
-          src="/assets/img/hero/hero-bg-shape2-6.png"
+          src="/assets/hero/hero-bg-shape2-6.png"
           alt=""
           width={116}
           height={280}
         />
         <Image
           className="hero-bottom-shape hero-bottom-shape-coral"
-          src="/assets/img/hero/hero-bg-shape2-7.png"
+          src="/assets/hero/hero-bg-shape2-7.png"
           alt=""
           width={69}
           height={215}
@@ -77,7 +77,7 @@ export default function HomePage() {
             <span className="hero-lives">
               <em>Lives</em>
               <Image
-                src="/assets/img/hero/hero-bg-shape2-3.png"
+                src="/assets/hero/hero-bg-shape2-3.png"
                 alt=""
                 width={67}
                 height={71}
@@ -101,7 +101,7 @@ export default function HomePage() {
           <div className="hero-portrait-shadow" aria-hidden="true" />
           <div className="hero-portrait">
             <Image
-              src="/assets/img/hero/hero_thumb_1_1.webp"
+              src="/assets/hero/hero_thumb_1_1.webp"
               alt="A child in a rural community"
               fill
               priority
@@ -111,7 +111,7 @@ export default function HomePage() {
         </div>
         <Image
           className="hero-bottom-wave"
-          src="/assets/img/hero/hero-bg-shape2-9.png"
+          src="/assets/hero/hero-bg-shape2-9.png"
           alt=""
           fill
           sizes="100vw"
@@ -122,21 +122,21 @@ export default function HomePage() {
         <div className="about-collage">
           <Image
             className="about-decoration about-decoration-green"
-            src="/assets/img/shape/about_shape2_1.png"
+            src="/assets/shape/about_shape2_1.png"
             alt=""
             width={476}
             height={458}
           />
           <Image
             className="about-decoration about-decoration-orange"
-            src="/assets/img/shape/about_shape2_2.png"
+            src="/assets/shape/about_shape2_2.png"
             alt=""
             width={108}
             height={119}
           />
           <div className="about-image about-image-main">
             <Image
-              src="/assets/img/normal/about_2_1.webp"
+              src="/assets/normal/about_2_1.webp"
               alt="IRAID community work"
               fill
               sizes="(max-width: 820px) 90vw, 42vw"
@@ -144,7 +144,7 @@ export default function HomePage() {
           </div>
           <div className="about-image about-image-small">
             <Image
-              src="/assets/img/normal/about_2_2.png"
+              src="/assets/normal/about_2_2.png"
               alt="Community programme participant"
               fill
               sizes="(max-width: 820px) 45vw, 20vw"
@@ -152,7 +152,7 @@ export default function HomePage() {
           </div>
           <div className="about-image about-image-accent">
             <Image
-              src="/assets/img/normal/about_2_3.png"
+              src="/assets/normal/about_2_3.png"
               alt="Mother and children in a community boat"
               fill
               sizes="(max-width: 820px) 50vw, 24vw"
@@ -174,7 +174,7 @@ export default function HomePage() {
             <article>
               <span>
                 <Image
-                  src="/assets/img/icon/about-icon2-1.svg"
+                  src="/assets/icons/about-icon2-1.svg"
                   alt=""
                   width={60}
                   height={60}
@@ -191,7 +191,7 @@ export default function HomePage() {
             <article>
               <span>
                 <Image
-                  src="/assets/img/icon/about-icon2-2.svg"
+                  src="/assets/icons/about-icon2-2.svg"
                   alt=""
                   width={60}
                   height={60}
@@ -277,7 +277,7 @@ export default function HomePage() {
         <div className="donation-media">
           <div className="donation-image">
             <Image
-              src="/assets/img/img/water/P30.webp"
+              src="/assets/photos/water/P30.webp"
               alt="IRAID water project"
               fill
               sizes="(max-width: 820px) 92vw, 46vw"

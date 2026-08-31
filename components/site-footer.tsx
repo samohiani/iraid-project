@@ -27,7 +27,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <Image
         className="footer-hand-art"
-        src="/assets/img/shape/footer-bg-shape3.png"
+        src="/assets/shape/footer-bg-shape3.png"
         alt=""
         width={208}
         height={176}
@@ -36,7 +36,7 @@ export function SiteFooter() {
         <section className="footer-brand" aria-labelledby="footer-brand-title">
           <Link href="/" aria-label="IRAID home">
             <Image
-              src="/assets/img/brand/logo-main.png"
+              src="/assets/brand/logo-main.png"
               alt="IRAID"
               width={112}
               height={112}

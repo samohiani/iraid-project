@@ -11,7 +11,7 @@ export function FaqSection() {
     <section className="home-section faq-section" aria-labelledby="faq-title">
       <div className="faq-child-orbit" aria-hidden="true">
         <Image
-          src="/assets/img/normal/faq_1_3.png"
+          src="/assets/normal/faq_1_3.png"
           alt=""
           width={168}
           height={170}
@@ -21,7 +21,7 @@ export function FaqSection() {
       <div className="faq-visual" aria-hidden="true">
         <div className="faq-visual-main">
           <Image
-            src="/assets/img/img/water/P44.webp"
+            src="/assets/photos/water/P44.webp"
             alt=""
             fill
             sizes="(max-width: 820px) 92vw, 40vw"
@@ -29,7 +29,7 @@ export function FaqSection() {
         </div>
         <div className="faq-visual-secondary">
           <Image
-            src="/assets/img/img/agric/P13.jpeg"
+            src="/assets/photos/agriculture/P13.jpeg"
             alt=""
             fill
             sizes="(max-width: 820px) 70vw, 22vw"
@@ -37,7 +37,7 @@ export function FaqSection() {
         </div>
         <div className="faq-visual-hand">
           <Image
-            src="/assets/img/shape/hand-group-shape1.png"
+            src="/assets/shape/hand-group-shape1.png"
             alt=""
             width={166}
             height={145}

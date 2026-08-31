@@ -421,8 +421,8 @@ textarea {
 .hero-portrait-shadow {
   position: absolute;
   inset: 0;
-  mask: url("/assets/img/hero/hero-thumb-shape2-1.png") center/contain no-repeat;
-  -webkit-mask: url("/assets/img/hero/hero-thumb-shape2-1.png") center/contain
+  mask: url("/assets/hero/hero-thumb-shape2-1.png") center/contain no-repeat;
+  -webkit-mask: url("/assets/hero/hero-thumb-shape2-1.png") center/contain
     no-repeat;
 }
 .hero-portrait-shadow {
@@ -617,8 +617,8 @@ textarea {
   height: 44%;
   border: 10px solid #fff;
   border-radius: 30px 30px 80px 30px;
-  -webkit-mask-image: url("/assets/img/normal/about_2_3-mask.png");
-  mask-image: url("/assets/img/normal/about_2_3-mask.png");
+  -webkit-mask-image: url("/assets/normal/about_2_3-mask.png");
+  mask-image: url("/assets/normal/about_2_3-mask.png");
   -webkit-mask-position: center;
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -772,7 +772,7 @@ textarea {
 .programme-section {
   position: relative;
   background: var(--soft)
-    url("/assets/img/bg/gray-bg2.webp") center top / cover no-repeat;
+    url("/assets/backgrounds/gray-bg2.webp") center top / cover no-repeat;
 }
 .programme-heart {
   position: absolute;
@@ -1164,7 +1164,7 @@ textarea {
   right: calc(var(--testimonial-portrait-size) / 2);
   left: calc(var(--testimonial-portrait-size) / 2);
   height: 221px;
-  background: url("/assets/img/testimonial/testimonial-bg-shape2-1.png")
+  background: url("/assets/testimonial/testimonial-bg-shape2-1.png")
     center / 100% 100% no-repeat;
 }
 .testimonial-portraits button {
@@ -1290,7 +1290,7 @@ textarea {
   right: -76px;
   width: 116px;
   height: 62px;
-  background: url("/assets/img/icon/process-arrow1-1.svg") center / contain
+  background: url("/assets/icons/process-arrow1-1.svg") center / contain
     no-repeat;
   pointer-events: none;
 }
@@ -1311,9 +1311,9 @@ textarea {
   height: 279px;
   overflow: hidden;
   background: #edf1ef;
-  mask: url("/assets/img/process/process-card-shape.png") center / contain
+  mask: url("/assets/process/process-card-shape.png") center / contain
     no-repeat;
-  -webkit-mask: url("/assets/img/process/process-card-shape.png") center /
+  -webkit-mask: url("/assets/process/process-card-shape.png") center /
     contain no-repeat;
 }
 .process-card-thumb img {
@@ -1609,7 +1609,7 @@ textarea {
   color: #fff;
   background:
     linear-gradient(rgba(16, 77, 67, 0.86), rgba(16, 77, 67, 0.86)),
-    url("/assets/img/bg/cta-bg1-1.webp") center/cover;
+    url("/assets/backgrounds/cta-bg1-1.webp") center/cover;
 }
 .page-hero > div {
   width: min(880px, 100%);
@@ -2500,7 +2500,7 @@ html[data-iraid-intro="skip"] .homepage-intro {
   bottom: 0;
   width: 240px;
   height: 155px;
-  background-image: url("/assets/img/shape/footer-bg-shape1-2.png");
+  background-image: url("/assets/shape/footer-bg-shape1-2.png");
   background-position: right bottom;
 }
 .footer-hand-art {
@@ -2871,7 +2871,7 @@ html[data-iraid-intro="skip"] .homepage-intro {
         rgba(26, 104, 91, 0.96) 58%,
         #082b26 100%
       ),
-      url("/assets/img/img/bg.webp") center/cover;
+      url("/assets/photos/background.webp") center/cover;
     visibility: hidden;
     pointer-events: none;
     clip-path: circle(0 at calc(100% - 38px) 42px);

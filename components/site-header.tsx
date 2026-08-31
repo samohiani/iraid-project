@@ -32,7 +32,7 @@ export function SiteHeader() {
         <div className="iraid-header-inner">
           <Link href="/" className="iraid-header-logo" aria-label="IRAID home">
             <Image
-              src="/assets/img/brand/logo-main.png"
+              src="/assets/brand/logo-main.png"
               alt="IRAID"
               width={76}
               height={76}
@@ -89,7 +89,7 @@ export function SiteHeader() {
           </button>
           <Image
             className="iraid-panel-logo"
-            src="/assets/img/brand/logo-main.png"
+            src="/assets/brand/logo-main.png"
             alt="IRAID"
             width={62}
             height={62}
