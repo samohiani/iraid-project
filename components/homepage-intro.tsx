@@ -21,18 +21,17 @@ export function HomepageIntro() {
     const leaveTimer = window.setTimeout(() => {
       setLeaving(true);
       root.dataset.iraidIntro = "leaving";
-    }, 950);
+    }, 1800);
     const removeTimer = window.setTimeout(() => {
       setVisible(false);
       root.dataset.iraidIntro = "skip";
       body.style.overflow = previousBodyOverflow;
-    }, 1500);
+    }, 2350);
 
     return () => {
       window.clearTimeout(leaveTimer);
       window.clearTimeout(removeTimer);
       body.style.overflow = previousBodyOverflow;
-      root.dataset.iraidIntro = "skip";
     };
   }, []);
 

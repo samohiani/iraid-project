@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { HomepageIntro } from "@/components/homepage-intro";
 import { SiteShell } from "@/components/site-shell";
 import "./globals.css";
 
@@ -26,8 +27,7 @@ const homepageIntroStateScript = `
   (() => {
     const root = document.documentElement;
     const onHomepage = window.location.pathname === "/";
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    root.dataset.iraidIntro = onHomepage && !reducedMotion ? "show" : "skip";
+    root.dataset.iraidIntro = onHomepage ? "show" : "skip";
   })();
 `;
 
@@ -48,6 +48,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <HomepageIntro />
         <SiteShell>{children}</SiteShell>
       </body>
     </html>

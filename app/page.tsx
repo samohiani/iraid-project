@@ -4,7 +4,6 @@ import { CallToActionSection } from "@/components/call-to-action-section";
 import { DonationCampaign } from "@/components/donation-campaign";
 import { DonationProcessSection } from "@/components/donation-process-section";
 import { FaqSection } from "@/components/faq-section";
-import { HomepageIntro } from "@/components/homepage-intro";
 import { ImpactStats } from "@/components/impact-stats";
 import {
   TestimonialsSection,
@@ -16,7 +15,6 @@ import { programmes } from "@/data/site-content";
 export default function HomePage() {
   return (
     <>
-      <HomepageIntro />
       <section className="home-hero">
         <Image
           className="hero-brush"
