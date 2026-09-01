@@ -70,6 +70,10 @@ Open `/studio` on the deployed website (or `http://localhost:3000/studio` locall
 
 The Studio password is configured with the server-only `IRAID_STUDIO_PASSWORD` and `IRAID_STUDIO_SESSION_SECRET` environment variables. Set both locally in `.env.local` and in the deployment environment; do not commit either value.
 
+### Email delivery
+
+The contact form opens the visitor’s email app with a pre-filled message addressed to `officiallyiraid@gmail.com`. The visitor must press Send to complete delivery; the website does not store or automatically deliver contact messages.
+
 ## Images and media
 
 Static media is served from `public/` and referenced with URL paths beginning with `/`, for example:

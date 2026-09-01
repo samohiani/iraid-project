@@ -13,4 +13,3 @@ export const organization = {
 } as const;
 
 export const organizationEmailHref = `mailto:${organization.email}`;
-export const contactFormAction = `https://formsubmit.co/${organization.email}`;

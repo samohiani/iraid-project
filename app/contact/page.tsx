@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { ContactForm } from "@/components/contact-form";
 import { PageHero } from "@/components/page-hero";
 import {
-  contactFormAction,
   organization,
   organizationEmailHref,
 } from "@/data/organization";
@@ -119,80 +119,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        <form
-          id="contact-form"
-          className="contact-form contact-form-card"
-          action={contactFormAction}
-          method="POST"
-        >
-          <input
-            type="hidden"
-            name="_subject"
-            value="New IRAID website enquiry"
-          />
-          <div className="contact-form-heading">
-            <p className="contact-label">Send a message</p>
-            <h2>How can we help?</h2>
-            <p>
-              Share a little about yourself and what brought you here. We’ll
-              get back to you as soon as we can.
-            </p>
-          </div>
-          <div className="contact-form-row">
-            <label>
-              Your name
-              <input name="name" autoComplete="name" placeholder="Jane Doe" required />
-            </label>
-            <label>
-              Email address
-              <input
-                type="email"
-                name="email"
-                autoComplete="email"
-                placeholder="you@example.com"
-                required
-              />
-            </label>
-          </div>
-          <div className="contact-form-row">
-            <label>
-              Phone number
-              <input
-                type="tel"
-                name="phone"
-                autoComplete="tel"
-                placeholder="+234"
-              />
-            </label>
-            <label>
-              I’m reaching out about
-              <select name="interest" defaultValue="">
-                <option value="" disabled>
-                  Choose an option
-                </option>
-                <option value="volunteering">Volunteering</option>
-                <option value="partnership">A partnership</option>
-                <option value="donation">Making a donation</option>
-                <option value="programmes">IRAID programmes</option>
-                <option value="general enquiry">A general enquiry</option>
-              </select>
-            </label>
-          </div>
-          <label>
-            Your message
-            <textarea
-              name="message"
-              placeholder="Tell us what you have in mind..."
-              required
-            />
-          </label>
-          <div className="contact-form-footer">
-            <button className="primary-button" type="submit">
-              Send message <span>↗</span>
-            </button>
-            <p>We treat every enquiry with care and respect.</p>
-          </div>
-        </form>
+        <ContactForm />
       </section>
     </>
   );

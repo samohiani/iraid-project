@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { NewsletterForm } from "@/components/newsletter-form";
 import {
   organization,
   organizationEmailHref,
@@ -25,7 +24,7 @@ export function SiteFooter() {
             </h2>
           </div>
           <Link href="/contact" className="footer-appeal-button">
-            Support IRAID <span aria-hidden="true">↗</span>
+            Contact IRAID <span aria-hidden="true">↗</span>
           </Link>
         </section>
 
@@ -78,37 +77,19 @@ export function SiteFooter() {
             className="footer-connect"
             aria-labelledby="footer-connect-title"
           >
-            <p className="footer-section-label">Stay informed</p>
-            <h2 id="footer-connect-title">News from the field</h2>
+            <p className="footer-section-label">Get in touch</p>
+            <h2 id="footer-connect-title">We&apos;d love to hear from you</h2>
             <p>
-              Occasional updates on our work, impact and ways to get involved.
+              For partnerships, volunteering or support, talk to the IRAID
+              team.
             </p>
-            <NewsletterForm />
+            <div className="footer-connect-links">
+              <a href={organizationEmailHref}>{organization.email}</a>
+              <a href={organization.phones[0].href}>
+                {organization.phones[0].display}
+              </a>
+            </div>
           </section>
-        </div>
-
-        <div className="footer-contact-strip">
-          <div>
-            <span>Visit</span>
-            <a href={organization.mapUrl} target="_blank" rel="noreferrer">
-              {organization.address}
-            </a>
-          </div>
-          <div>
-            <span>Call</span>
-            <p>
-              {organization.phones.map((phone, index) => (
-                <span key={phone.href}>
-                  {index > 0 ? " · " : ""}
-                  <a href={phone.href}>{phone.display}</a>
-                </span>
-              ))}
-            </p>
-          </div>
-          <div>
-            <span>Email</span>
-            <a href={organizationEmailHref}>{organization.email}</a>
-          </div>
         </div>
 
         <div className="footer-bottom">
