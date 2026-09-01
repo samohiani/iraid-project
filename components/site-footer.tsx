@@ -6,103 +6,115 @@ import {
   organizationEmailHref,
 } from "@/data/organization";
 
-const quickLinks = [
-  ["/about", "About Us"],
-  ["/blog", "Our News"],
-  ["/gallery", "Our Track Record"],
-  ["/programmes", "Our Programmes"],
-  ["/contact", "Contact Us"],
-] as const;
-
-const programmeLinks = [
-  ["/programmes", "Community Development"],
-  ["/programmes", "Education Support"],
-  ["/programmes", "Agriculture & Livelihoods"],
-  ["/programmes", "Family Health"],
-  ["/gallery", "Our Campaigns"],
+const footerLinks = [
+  ["/about", "Our story"],
+  ["/programmes", "What we do"],
+  ["/gallery", "Our impact"],
+  ["/team", "Meet the team"],
 ] as const;
 
 export function SiteFooter() {
   return (
     <footer className="site-footer">
-      <Image
-        className="footer-hand-art"
-        src="/assets/shape/footer-bg-shape3.png"
-        alt=""
-        width={208}
-        height={176}
-      />
-      <div className="footer-main">
-        <section className="footer-brand" aria-labelledby="footer-brand-title">
-          <Link href="/" aria-label="IRAID home">
-            <Image
-              src="/assets/brand/logo-main.png"
-              alt="IRAID"
-              width={112}
-              height={112}
-            />
+      <div className="footer-shell">
+        <section className="footer-appeal" aria-labelledby="footer-appeal-title">
+          <div>
+            <p>Community-led change starts with people who care.</p>
+            <h2 id="footer-appeal-title">
+              Help practical ideas reach the communities that need them.
+            </h2>
+          </div>
+          <Link href="/contact" className="footer-appeal-button">
+            Support IRAID <span aria-hidden="true">↗</span>
           </Link>
-          <h2 id="footer-brand-title">{organization.name}</h2>
-          <div className="footer-contact-list">
-            <div>
-              <span>Locate address</span>
-              <a href={organization.mapUrl} target="_blank" rel="noreferrer">
-                {organization.address}
+        </section>
+
+        <div className="footer-main">
+          <section className="footer-brand" aria-labelledby="footer-brand-title">
+            <h2 id="footer-brand-title" className="sr-only">
+              About IRAID
+            </h2>
+            <Link href="/" className="footer-brand-lockup" aria-label="IRAID home">
+              <Image
+                src="/assets/brand/logo-main.png"
+                alt=""
+                width={84}
+                height={84}
+              />
+              <span>
+                <strong>{organization.shortName}</strong>
+                <small>{organization.name}</small>
+              </span>
+            </Link>
+            <p className="footer-brand-tagline">
+              Building stronger livelihoods and resilient communities through
+              practical, locally grounded support.
+            </p>
+            <div className="footer-socials" aria-label="Social media">
+              <a
+                href="https://www.facebook.com/search/top?q=Integrated%20Rural%20Aid%20Foundation"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Facebook <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                href="https://www.instagram.com/explore/search/keyword/?q=iraid"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Instagram <span aria-hidden="true">↗</span>
               </a>
             </div>
-            <div>
-              <span>Call us any time</span>
-              {organization.phones.map((phone) => (
-                <a href={phone.href} key={phone.href}>
-                  {phone.display}
-                </a>
+          </section>
+
+          <FooterLinks
+            title="Explore"
+            label="Explore IRAID"
+            links={footerLinks}
+          />
+
+          <section
+            className="footer-connect"
+            aria-labelledby="footer-connect-title"
+          >
+            <p className="footer-section-label">Stay informed</p>
+            <h2 id="footer-connect-title">News from the field</h2>
+            <p>
+              Occasional updates on our work, impact and ways to get involved.
+            </p>
+            <NewsletterForm />
+          </section>
+        </div>
+
+        <div className="footer-contact-strip">
+          <div>
+            <span>Visit</span>
+            <a href={organization.mapUrl} target="_blank" rel="noreferrer">
+              {organization.address}
+            </a>
+          </div>
+          <div>
+            <span>Call</span>
+            <p>
+              {organization.phones.map((phone, index) => (
+                <span key={phone.href}>
+                  {index > 0 ? " · " : ""}
+                  <a href={phone.href}>{phone.display}</a>
+                </span>
               ))}
-            </div>
-            <div>
-              <span>Email us any time</span>
-              <a href={organizationEmailHref}>{organization.email}</a>
-            </div>
+            </p>
           </div>
-        </section>
-
-        <FooterLinks title="Quick Links" label="Footer quick links" links={quickLinks} />
-        <FooterLinks title="Our Programmes" label="IRAID programmes" links={programmeLinks} />
-
-        <section
-          className="footer-column footer-connect"
-          aria-labelledby="footer-connect-title"
-        >
-          <h2 id="footer-connect-title">Newsletter</h2>
-          <p>
-            Get updates on our impact and ways to support stronger rural
-            communities.
-          </p>
-          <NewsletterForm />
-          <div className="footer-socials" aria-label="Social media">
-            <a
-              href="https://www.facebook.com/search/top?q=Integrated%20Rural%20Aid%20Foundation"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Find IRAID on Facebook"
-            >
-              <span aria-hidden="true">f</span> Facebook
-            </a>
-            <a
-              href="https://www.instagram.com/explore/search/keyword/?q=iraid"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Find IRAID on Instagram"
-            >
-              <span aria-hidden="true">◎</span> Instagram
-            </a>
+          <div>
+            <span>Email</span>
+            <a href={organizationEmailHref}>{organization.email}</a>
           </div>
-        </section>
-      </div>
-      <div className="footer-bottom">
-        <p>
-          Copyright © {new Date().getFullYear()} <Link href="/">IRAID</Link>.
-          All Rights Reserved.
-        </p>
+        </div>
+
+        <div className="footer-bottom">
+          <p>© {new Date().getFullYear()} {organization.shortName}. All rights reserved.</p>
+          <p>Umuahia, Abia State, Nigeria</p>
+        </div>
       </div>
     </footer>
   );
@@ -118,13 +130,16 @@ function FooterLinks({
   links: ReadonlyArray<readonly [href: string, text: string]>;
 }) {
   return (
-    <nav className="footer-column" aria-label={label}>
+    <nav className="footer-links" aria-label={label}>
+      <p className="footer-section-label">Find your way</p>
       <h2>{title}</h2>
-      {links.map(([href, text]) => (
-        <Link href={href} key={`${href}-${text}`}>
-          {text}
-        </Link>
-      ))}
+      <div>
+        {links.map(([href, text]) => (
+          <Link href={href} key={`${href}-${text}`}>
+            {text} <span aria-hidden="true">↗</span>
+          </Link>
+        ))}
+      </div>
     </nav>
   );
 }

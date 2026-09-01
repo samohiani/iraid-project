@@ -5,5 +5,4 @@ export const navItems = [
   ["/gallery", "Gallery"],
   ["/blog", "Blog"],
   ["/team", "Our Team"],
-  ["/contact", "Contact Us"],
 ] as const;

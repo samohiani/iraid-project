@@ -40,6 +40,7 @@ The build produces an optimized production application in `.next/`. Build and de
 | `/blog` | Impact stories and articles |
 | `/blog/[slug]` | Individual impact story pages |
 | `/contact` | Contact and donation information |
+| `/studio` | Password-protected Sanity content studio for managing gallery projects |
 
 ## Project structure
 
@@ -62,6 +63,12 @@ Most text and structured content can be updated without changing component logic
 - `data/trustees.ts` — trustee and team profiles
 
 Page-specific layout and behaviour lives in `app/` and `components/`. Keep repeated UI in `components/` rather than copying it into multiple pages.
+
+### Managing gallery images
+
+Open `/studio` on the deployed website (or `http://localhost:3000/studio` locally). Enter the IRAID Studio password, then sign in with an approved Sanity account. Add a `Project / Work` document, upload its images, complete the captions and accessibility text, and enable `Show on website` when it is ready to publish.
+
+The Studio password is configured with the server-only `IRAID_STUDIO_PASSWORD` and `IRAID_STUDIO_SESSION_SECRET` environment variables. Set both locally in `.env.local` and in the deployment environment; do not commit either value.
 
 ## Images and media
 

@@ -51,10 +51,18 @@ export function SiteHeader() {
             ))}
           </nav>
           <div className="iraid-header-actions">
-            <Link href="/contact" className="iraid-header-donate">
+            <Link
+              href="/contact"
+              className={`iraid-header-donate${isActive("/contact") ? " is-active" : ""}`}
+              aria-current={isActive("/contact") ? "page" : undefined}
+            >
               <span aria-hidden="true">♥</span> Donate Now
             </Link>
-            <Link href="/contact" className="iraid-mobile-donate">
+            <Link
+              href="/contact"
+              className={`iraid-mobile-donate${isActive("/contact") ? " is-active" : ""}`}
+              aria-current={isActive("/contact") ? "page" : undefined}
+            >
               Donate
             </Link>
             <button
@@ -110,17 +118,11 @@ export function SiteHeader() {
           <div className="iraid-panel-actions">
             <Link
               href="/contact"
-              className="iraid-panel-donate"
+              className={`iraid-panel-donate${isActive("/contact") ? " is-active" : ""}`}
+              aria-current={isActive("/contact") ? "page" : undefined}
               onClick={() => setMenuOpen(false)}
             >
               ♥ Donate Now
-            </Link>
-            <Link
-              href="/contact"
-              className="iraid-panel-contact"
-              onClick={() => setMenuOpen(false)}
-            >
-              Contact IRAID <span>→</span>
             </Link>
           </div>
         </div>

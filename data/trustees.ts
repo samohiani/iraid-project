@@ -19,10 +19,10 @@ export const trustees: Trustee[] = [
     portraitClass: "trustee-photo--goc",
   },
   {
-    name: "Mrs. Lillian. N. Ochulor",
+    name: "Mrs. Lilian. N. Ochulor",
     role: "Director Finance and Administration IRAID",
     image: "/assets/team/02-cleaned.webp",
-    portraitClass: "trustee-photo--lillian",
+    portraitClass: "trustee-photo--lilian",
   },
   {
     name: "Mrs. Rebecca. U. Ugwueje Director",

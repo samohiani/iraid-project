@@ -1,10 +1,23 @@
 import type { Metadata } from "next";
-import { GalleryGrid } from "@/components/gallery-grid";
+import { GalleryGrid, type GalleryItem } from "@/components/gallery-grid";
 import { PageHero } from "@/components/page-hero";
+import { galleryQuery, hasSanityConfig, sanityClient } from "@/lib/sanity";
 
 export const metadata: Metadata = { title: "Gallery" };
 
-export default function GalleryPage() {
+// Pick up newly published Sanity projects without requiring a code deployment.
+export const revalidate = 60;
+
+export default async function GalleryPage() {
+  const projects = hasSanityConfig && sanityClient
+    ? await sanityClient.fetch<Array<{ images?: Array<{ src?: string; alt?: string; caption?: string }>; category: string; status?: GalleryItem["status"] }>>(galleryQuery)
+    : [];
+  const managedItems = projects.flatMap((project) =>
+    (project.images ?? [])
+      .filter((image): image is { src: string; alt?: string; caption?: string } => Boolean(image.src))
+      .map((image) => ({ category: project.category, src: image.src, title: image.caption || image.alt || project.category, status: project.status === "ongoing" ? ("ongoing" as const) : ("completed" as const) })),
+  );
+
   return (
     <>
       <PageHero
@@ -24,7 +37,7 @@ export default function GalleryPage() {
             looks like on the ground.
           </p>
         </div>
-        <GalleryGrid />
+        <GalleryGrid items={managedItems} />
       </section>
     </>
   );
