@@ -51,7 +51,7 @@ export function SiteFooter() {
             </p>
             <div className="footer-socials" aria-label="Social media">
               <a
-                href="https://www.facebook.com/search/top?q=Integrated%20Rural%20Aid%20Foundation"
+                href="https://www.facebook.com/share/1F5NnZFRrE/"
                 target="_blank"
                 rel="noreferrer"
               >
