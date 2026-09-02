@@ -58,7 +58,7 @@ export function SiteFooter() {
                 Facebook <span aria-hidden="true">↗</span>
               </a>
               <a
-                href="https://www.instagram.com/explore/search/keyword/?q=iraid"
+                href="https://www.instagram.com/iraidofficial/"
                 target="_blank"
                 rel="noreferrer"
               >
