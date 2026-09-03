@@ -1,5 +1,17 @@
 import { defineField, defineType } from "sanity";
 
+export const imageWithCaption = defineType({
+  name: "imageWithCaption",
+  title: "Image with caption",
+  type: "object",
+  fields: [
+    defineField({ name: "asset", title: "Image", type: "image", options: { hotspot: true }, validation: (rule) => rule.required() }),
+    defineField({ name: "caption", title: "Label / caption", type: "string", validation: (rule) => rule.required() }),
+    defineField({ name: "altText", title: "Accessibility description", type: "string" }),
+  ],
+  preview: { select: { title: "caption", media: "asset" } },
+});
+
 export const project = defineType({
   name: "project",
   title: "Project / Work",
@@ -29,17 +41,7 @@ export const project = defineType({
       name: "images",
       title: "Project images",
       type: "array",
-      of: [
-        {
-          type: "object",
-          fields: [
-            defineField({ name: "asset", title: "Image", type: "image", options: { hotspot: true }, validation: (rule) => rule.required() }),
-            defineField({ name: "caption", title: "Label / caption", type: "string", validation: (rule) => rule.required() }),
-            defineField({ name: "altText", title: "Accessibility description", type: "string" }),
-          ],
-          preview: { select: { title: "caption", media: "asset" } },
-        },
-      ],
+      of: [{ type: "imageWithCaption" }],
       validation: (rule) => rule.min(1),
     }),
   ],

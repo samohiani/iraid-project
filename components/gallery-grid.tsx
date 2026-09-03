@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 
 export type ProjectStatus = "ongoing" | "completed";
 export type GalleryItem = { category: string; src: string; title: string; status: ProjectStatus };
@@ -10,6 +11,7 @@ export function GalleryGrid({ items }: { items: readonly GalleryItem[] }) {
   const [categoryFilter, setCategoryFilter] = useState("All");
   const [statusFilter, setStatusFilter] = useState<"all" | ProjectStatus>("all");
   const [selected, setSelected] = useState<GalleryItem | null>(null);
+  const [mounted, setMounted] = useState(false);
   const categories = ["All", ...Array.from(new Set(items.map((item) => item.category)))];
   const statusCounts = {
     all: items.length,
@@ -20,6 +22,8 @@ export function GalleryGrid({ items }: { items: readonly GalleryItem[] }) {
     (categoryFilter === "All" || item.category === categoryFilter) &&
     (statusFilter === "all" || item.status === statusFilter),
   ), [categoryFilter, items, statusFilter]);
+
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     if (!selected) return;
@@ -72,14 +76,15 @@ export function GalleryGrid({ items }: { items: readonly GalleryItem[] }) {
           </button>
         ))}
       </div>
-      {selected && (
+      {mounted && selected && createPortal(
         <div className="lightbox" role="dialog" aria-modal="true" aria-label={selected.title} onClick={() => setSelected(null)}>
           <button type="button" className="lightbox-close" onClick={() => setSelected(null)} aria-label="Close image">×</button>
           <button type="button" className="lightbox-arrow lightbox-arrow--previous" onClick={(event) => { event.stopPropagation(); goTo(-1); }} aria-label="Previous image">←</button>
           <div className="lightbox-image" onClick={(event) => event.stopPropagation()}><Image src={selected.src} alt={selected.title} fill sizes="90vw" /></div>
           <button type="button" className="lightbox-arrow lightbox-arrow--next" onClick={(event) => { event.stopPropagation(); goTo(1); }} aria-label="Next image">→</button>
           <div className="lightbox-caption"><p>{selected.title}</p><span>{selected.category} · {selected.status === "ongoing" ? "Ongoing" : "Completed"} · {selectedIndex + 1} of {visible.length}</span></div>
-        </div>
+        </div>,
+        document.body,
       )}
     </>
   );
