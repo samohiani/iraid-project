@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import localFont from "next/font/local";
 import { HomepageIntro } from "@/components/homepage-intro";
 import { SiteShell } from "@/components/site-shell";
@@ -43,10 +44,12 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/assets/favicon/favicon.ico" />
-        <script
+        <Script
           id="iraid-intro-state"
-          dangerouslySetInnerHTML={{ __html: homepageIntroStateScript }}
-        />
+          strategy="beforeInteractive"
+        >
+          {homepageIntroStateScript}
+        </Script>
       </head>
       <body>
         <HomepageIntro />

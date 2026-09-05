@@ -1,3 +1,3 @@
-import { imageWithCaption, project } from "./project";
+import { imageWithCaption, project, videoWithCaption } from "./project";
 
-export const schemaTypes = [imageWithCaption, project];
+export const schemaTypes = [imageWithCaption, videoWithCaption, project];

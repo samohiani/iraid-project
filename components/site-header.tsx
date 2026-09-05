@@ -37,6 +37,7 @@ export function SiteHeader() {
               width={76}
               height={76}
               priority
+              loading="eager"
             />
           </Link>
           <nav className="iraid-desktop-nav" aria-label="Primary navigation">

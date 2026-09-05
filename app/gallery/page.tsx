@@ -8,15 +8,52 @@ export const metadata: Metadata = { title: "Gallery" };
 // Pick up newly published Sanity projects without requiring a code deployment.
 export const revalidate = 60;
 
-export default async function GalleryPage() {
-  const projects = hasSanityConfig && sanityClient
-    ? await sanityClient.fetch<Array<{ images?: Array<{ src?: string; alt?: string; caption?: string }>; category: string; status?: GalleryItem["status"] }>>(galleryQuery)
-    : [];
-  const managedItems = projects.flatMap((project) =>
-    (project.images ?? [])
-      .filter((image): image is { src: string; alt?: string; caption?: string } => Boolean(image.src))
-      .map((image) => ({ category: project.category, src: image.src, title: image.caption || image.alt || project.category, status: project.status === "ongoing" ? ("ongoing" as const) : ("completed" as const) })),
+type GalleryProject = {
+  category: string;
+  status?: GalleryItem["status"];
+  images?: Array<{ src?: string; alt?: string; caption?: string }>;
+  video?: { src?: string; caption?: string };
+};
+
+function toGalleryItems(project: GalleryProject): GalleryItem[] {
+  const status: GalleryItem["status"] =
+    project.status === "ongoing" ? "ongoing" : "completed";
+  const images = (project.images ?? []).flatMap((image) =>
+    image.src
+      ? [{
+          kind: "image" as const,
+          category: project.category,
+          src: image.src,
+          title: image.caption || image.alt || project.category,
+          status,
+        }]
+      : [],
   );
+  const video = project.video?.src
+    ? [{
+        kind: "video" as const,
+        category: project.category,
+        src: project.video.src,
+        title: project.video.caption || project.category,
+        status,
+      }]
+    : [];
+
+  return [...images, ...video];
+}
+
+export default async function GalleryPage() {
+  let projects: GalleryProject[] = [];
+
+  if (hasSanityConfig && sanityClient) {
+    try {
+      projects = await sanityClient.fetch(galleryQuery);
+    } catch (error) {
+      console.error("Unable to load gallery content from Sanity", error);
+    }
+  }
+
+  const managedItems = projects.flatMap(toGalleryItems);
 
   return (
     <>
